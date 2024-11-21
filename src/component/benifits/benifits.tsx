@@ -1,57 +1,64 @@
 import RetroGrid from '../../components/ui/retro-grid';
-import './benifits.css';
+import './benifits.css'
 const Benefits = () => {
   return (
-    <section className='partner-choose'>
-      <div className='background-grid'>
-        <h1>Benefits to Join Hubnex Labs</h1>
+    <div className="benefits-container">
+       <RetroGrid/>
+      <h1 className="benefits-title">Benefits to Join Hubnex Labs</h1>
+     
+      <div className="benefits-row">
+   
+        <div className="benefit-card">
+          <img
+            src="src\assets\ontimedelivery.svg"
+            alt="On Time Delivery"
+            className="card-image"
+          />
+          <div className="card-content black-bg">
+            <h3>On Time Delivery</h3>
+            <p>We deliver the quality you need on time.</p>
+          </div>
+        </div>
 
-        <RetroGrid />
+       
+        <div className="benefit-card">
+          <div className="card-content black-bg">
+            <h3>Dedicated Project Manager</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <img
+            src="src\assets\support.svg"
+            alt="Project Manager"
+            className="card-image"
+          />
+          <div className="card-content black-bg">
+            <h3>24 × 7 Round-the-clock Support</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+
+        
+        <div className="benefit-card">
+          <img
+            src="src\assets\satisfaction.svg"
+            alt="Customer Satisfaction"
+            className="card-image"
+          />
+          <div className="card-content black-bg">
+            <h3>100% Customer Satisfaction</h3>
+            <p>Our top priority is ensuring every customer leaves with a smile.</p>
+           
+          </div>
+          <div  className="card-content black-bg">
+          <h3>Escrow Account</h3>
+            <p>
+              Keeping your money safe with escrow services. Lorem ipsum lorem
+              ipsum.
+            </p>
+          </div>
+        </div>
       </div>
-      <div className='cards-container'>
-        <div className='card'>
-          <div className='image-placeholder'>
-            <img src='src\assets\ontimedelivery.svg' alt='' />
-          </div>
-          <div className='advance'>
-            <h1 className='card-heading'>Fast MVP Development</h1>
-            <p className='card-text'>
-              We develop the prototypes and MVP for the ERP System within a few
-              months and optimise the final product based on its performance
-              metrics and your feedback.
-            </p>
-          </div>
-        </div>
-
-        <div className='card'>
-          <div className='image-placeholder'>
-            <img src='src\assets\support.svg' alt='' />
-          </div>
-          <div className='advance'>
-            <h1 className='card-heading'>Maintenance & Support</h1>
-            <p className='card-text'>
-              Our work does not end with delivery. We offer complete support and
-              maintenance post the launch of the ERP systems to ensure their
-              smooth functioning.
-            </p>
-          </div>
-        </div>
-
-        <div className='card'>
-          <div className='image-placeholder'>
-            <img src='src\assets\satisfaction.svg' alt='' />
-          </div>
-          <div className='advance'>
-            <h1 className='card-heading'>Smooth ERP Intergration</h1>
-            <p className='card-text'>
-              We ensure smooth ERP integration with other business parts,
-              including other ERPs, Salesforce, Office Suite, and IoT systems,
-              for effective, seamless business operations.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
   );
 };
 

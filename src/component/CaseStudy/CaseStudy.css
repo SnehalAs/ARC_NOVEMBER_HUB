@@ -1,147 +1,117 @@
-/* Section Styles */
-.case-study-section {
-  padding: 2rem;
-  background: linear-gradient(to bottom, #1607e9, #000000);
-  color: #ffffff;
-  font-family: Arial, sans-serif;
+.case-study-section{
+  background:  linear-gradient(to bottom, #1607e9, #000000);;
 }
 
-.case-study-header {
-  text-align: center;
-  margin-bottom: 2rem;
+.case-study-header h1{
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+}
+.case-study-header p{
+ font-size: 1.5rem;
+ margin-left: 100px;
+ color: white;
 }
 
-.case-study-header h1 {
-  font-size: 4rem;
-  color: #ffffff;
-  margin-bottom: 1rem;
-}
-
-.case-study-header p {
-  font-size: 1.5rem;
-  color: #cccccc;
-  line-height: 1.5;
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-
-.connect-sales-button {
-  background-color: #007bff;
-  color: #fff;
-  padding: 0.7rem 1.5rem;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.connect-sales-button:hover {
-  background-color: #0056b3;
-}
-
-/* Carousel Styles */
 .carousel {
-  max-width: 900px;
-  margin: 0 auto;
+  max-width: 90%;
+  margin: 0 auto; /* Center the entire carousel */
+  position: relative;
 }
 
 .embla {
   overflow: hidden;
+  padding-bottom: 2rem; /* Add spacing for the buttons */
 }
 
 .embla__container {
   display: flex;
-  gap: 1rem;
+  gap: 2rem; /* Adjust gap between slides */
 }
 
 .embla__slide {
-  flex: 0 0 100%;
+  flex: 0 0 100%; /* Ensure each slide takes full carousel width */
   display: flex;
-  justify-content: center;
-  align-items: center;
+  gap: 1rem; /* Space between grouped images */
+  justify-content: center; /* Center align images within the slide */
 }
 
-/* Card Styles */
 .card {
-  width: 100%;
-  max-width: 650px;
+  width: 45%; /* Each card takes 45% of the slide width */
   height: 450px;
   border-radius: 15px;
   overflow: hidden;
   position: relative;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
 }
 
-/* Tag at the Top-Right */
-.tag {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background: rgba(0, 0, 0, 0.8);
-  color: #ffffff;
-  font-size: 0.9rem;
-  font-weight: bold;
-  padding: 0.5rem 1rem;
-  border-radius: 15px;
-  z-index: 1;
+.card:hover {
+  transform: scale(1.05);
 }
 
-/* Content at the Bottom */
-.card-content {
-  background-color: #000000;
-  color: #ffffff;
-  padding: 1.5rem;
-  text-align: left;
-}
-
-.card-content h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.card-content p {
-  font-size: 1rem;
-  color: #cccccc;
-  margin-bottom: 1rem;
-}
-
-.card-content .read-more {
-  color: #007bff;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.card-content .read-more:hover {
-  text-decoration: underline;
-}
-
-/* Carousel Buttons */
 .carousel-controls {
   display: flex;
-  justify-content: center;
-  margin-top: 1rem;
+  justify-content: center; /* Center the buttons horizontally */
+  gap: 1rem; /* Add spacing between the buttons */
+  margin-top: 1rem; /* Add spacing between the buttons and the carousel */
 }
 
 .carousel-button {
-  background-color: #007bff;
-  color: #ffffff;
+  background-color: #d9e4ef; /* Button color */
+  color: white;
   border: none;
-  padding: 0.7rem 1.5rem;
-  border-radius: 50%;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
+  margin-bottom: 130px;
 }
 
 .carousel-button:hover {
-  background-color: #0056b3;
+  background-color: #64e2fc; /* Darker shade on hover */
 }
 
 
+.card-content{
+  background-color: black;
+  color: white;
+  padding: 15px;
+  border-radius: 0 0 15px 15px; /* Rounded corners for the bottom part */
+  z-index: 1;
+  text-align: left;
+}
 
 
+.tag {
+  position: absolute; /* Position relative to the card */
+  top: 10px; /* Vertical position inside the image */
+  right: 10px; /* Horizontal position inside the image */
+  background-color: #0f0e0e; /* Add a background color for the tag */
+  color: white; /* Text color */
+  padding: 5px 10px; /* Add padding for better appearance */
+  border-radius: 12px; /* Rounded corners */
+  font-size: 14px; /* Font size for the tag */
+  font-weight: bold; /* Make text bold */
+  text-transform: uppercase; /* Optional: Capitalize the text */
+  z-index: 2; /* Ensure it appears above other elements */
+}
 
+.card {
+  background: no-repeat center/cover; /* Ensure the background image behaves properly */
+}
 
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1); /* Optional: Add an overlay effect */
+  z-index: 1; /* Ensure it appears below the tag */
+}

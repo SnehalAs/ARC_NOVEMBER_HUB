@@ -28,7 +28,17 @@ const Footer = () => {
     </div>
       <div className='footer-content'>
         <div className='footer-section about'>
-          <img src='\public\footer.png' alt='' />
+        <div className="logo-container">
+      <img
+        src="src\assets\hubnexlogo.svg"
+        alt="Hubnex Logo"
+        className="logo-image"
+      />
+      <div className="logo-textt">
+        Hubnex
+        <span className="logo-subtextt">Labs</span>
+      </div>
+    </div>
           <h2 >About Hubnex Labs</h2>
           <p>
             We are a leading IT consultancy with expertise in innovative

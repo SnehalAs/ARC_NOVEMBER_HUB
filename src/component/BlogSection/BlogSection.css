@@ -1,139 +1,138 @@
-.case-study-section {
-  padding: 2rem;
-  background: linear-gradient(to bottom, #1607e9, #000000);
-  color: #ffffff;
-  font-family: Arial, sans-serif;
-}
+/** @format */
 
-.case-study-header {
-  text-align: center;
-  margin-bottom: 2rem;
+.main-blogs-container {
+  width: 100%;
+  margin-top: 5rem;
+  height: 145vh;
+  background: linear-gradient(to top right, #000912, #04265e, #245484);
+  
 }
-
-.case-study-header h1 {
-  font-size: 4rem;
-  color: #ffffff;
-  margin-bottom: 1rem;
-}
-
-.case-study-header p {
-  font-size: 1.5rem;
-  color: #cccccc;
-  line-height: 1.5;
-  margin-bottom: 1.5rem;
+.blogs-title {
   text-align: center;
 }
-
-.connect-sales-button {
-  background-color: #007bff;
-  color: #fff;
-  padding: 0.7rem 1.5rem;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
+.blogs-title h2 {
+  margin-top: 2rem;
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
 }
-
-.connect-sales-button:hover {
-  background-color: #0056b3;
+.blogs-title p {
+  color: white;
+  font-weight: 100;
 }
+/* .blogs-card-content {
+  background-color: antiquewhite;
+} */
+.blogs-card-content {
+  background-color: white;
+  height: 450px;
+  border-radius: 20px;
+  padding: 0 15px;
 
-
-.carousel {
-  max-width: 900px;
-  margin: 0 auto;
 }
-
-.embla {
-  overflow: hidden;
-}
-
-.embla__container {
-  display: flex;
-  gap: 1rem;
-}
-
-.embla__slide {
-  flex: 0 0 100%;
+.my-img-blogs {
+  /* background-color: bisque; */
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 20px;
+  /* height: 56px; */
 }
-
-.card {
-  width: 100%;
-  max-width: 650px;
-  height: 450px;
-  border-radius: 15px;
-  overflow: hidden;
-  position: relative;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+.my-text-blogs {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
 }
+.my-text-blogs h3 {
+  text-align: left;
+  margin-top: 1rem;
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 13px;
+  border: 1px solid red;
+}
+.my-text-blogs h1 {
+  margin-top: 1rem;
 
-
-.tag {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background: rgba(0, 0, 0, 0.8);
-  color: #ffffff;
-  font-size: 0.9rem;
+  border-radius: 13px;
+  font-size: 24px;
   font-weight: bold;
-  padding: 0.5rem 1rem;
-  border-radius: 15px;
-  z-index: 1;
 }
-
-
-.card-content {
-  background-color: #000000;
-  color: #ffffff;
-  padding: 1.5rem;
+.my-text-blogs p {
+  font-size: 15px;
   text-align: left;
 }
-
-.card-content h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.card-content p {
-  font-size: 1rem;
-  color: #cccccc;
-  margin-bottom: 1rem;
-}
-
-.card-content .read-more {
-  color: #007bff;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.card-content .read-more:hover {
-  text-decoration: underline;
-}
-
-
-.carousel-controls {
+.read {
+  margin-right: 7rem;
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 10px;
+}
+.view {
+  border: 2px solid white;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 1rem;
+  border-radius: 5px;
 }
 
-.carousel-button {
-  background-color: #007bff;
-  color: #ffffff;
-  border: none;
-  padding: 0.7rem 1.5rem;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background-color 0.3s;
+/* media Queries */
+@media (max-width: 768px) {
+  .main-blogs-container {
+    height: 120vh;
+  }
+  .blogs-card-content {
+    display: none !important;
+  }
+
+  /* Show only the first card */
+  .slick-slide:first-child .blogs-card-content {
+    display: block !important;
+  }
+  .slick-track {
+    display: flex;
+    justify-content: center;
+  }
+  .main-bg-card {
+    background-color: transparent;
+    scroll-snap-type: x mandatory;
+    user-select: none;
+    scroll-snap-align: center;
+  }
 }
 
-.carousel-button:hover {
-  background-color: #0056b3;
+/* For tablets (smaller tablets) */
+@media (max-width: 1024px) {
+  .blogs-title h2 {
+    font-size: 35px;
+  }
+
+  .blogs-title p {
+    font-size: 16px;
+  }
+
+  .my-text-blogs h1 {
+    font-size: 22px;
+  }
+
+  .my-text-blogs p {
+    font-size: 16px;
+  }
+
+  /* Make the View All button responsive */
+  .view {
+    margin: 0 auto;
+    width: auto;
+  }
+
+  /* Adjust slider for tablets */
+  .slick-slide {
+    width: 90% !important; /* Adjust width for better view on tablets */
+  }
 }
