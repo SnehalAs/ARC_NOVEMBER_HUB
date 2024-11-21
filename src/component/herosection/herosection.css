@@ -1,0 +1,233 @@
+.text {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 50%;
+
+}
+.small-text{
+  font-size: 3.5rem;
+  text-align: left;
+  margin-bottom: 15px;
+  font-weight: 1rem;
+}
+
+.para {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #555;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.btn-container {
+  display: flex;
+  gap: 20px;
+  color: white;
+}
+
+.img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  flex: 1;
+  border-radius: 20px;
+}
+
+.join h3 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.marquee {
+  display: flex;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee img {
+  margin: 40px;
+  border-radius: 10%;
+  padding: 10px;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
+
+.company-images {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.circle-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.avatars{
+  display: flex;
+  gap: 0;
+}
+
+.divider {
+  width: 2px;
+  height: 80px;
+  background-color: #ccc;
+  margin: 0 20px;
+} 
+
+
+
+.stars svg {
+  font-size: 1.2rem;
+}
+
+.btn-container .Join {
+  background-color: #1d4ed8;
+  color: white;
+  border-radius: 4px;
+  height: 44px;
+  padding: 0 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: transparent;
+}
+
+.btn-container .contact {
+  background-color: white;
+  color: black;
+  border: 1.5px solid black;
+  border-radius: 4px;
+  height: 44px;
+  padding: 0 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.company-stats {
+  display: flex;
+  justify-content: center; 
+  gap: 50px; 
+  margin-top: 20px;
+}
+
+.company-info,
+.rating-info {
+  text-align: left; 
+}
+
+.rating-info {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.rating-info strong {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.stars {
+  display: flex;
+  gap: 4px; 
+  justify-content: center;
+}
+
+.company-info strong {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: block;
+}
+
+.company-info p,
+.rating-info p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 8px; 
+}
+
+.divider {
+  width: 2px;
+  height: auto;
+  background-color: #dcdcdc; 
+}
+.Mystat-text,
+  .Myrating {
+    max-width: 17vw!important;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: #555;
+    margin-left: 10px;
+  }
+  .My-rating {
+    margin-top: -1rem;
+    max-width: 17vw;
+    min-height: 15vh!important;
+  }
+  
+  .Mystat-number {
+    font-weight: 700;
+    font-size: 30px;
+    color: black;
+  }
+  
+  .Mystars {
+    font-size: 30px;
+    color: #485aff;
+    margin-bottom: 4rem;
+    margin-right: 4rem;
+  }
+  .Myrtext{
+    max-width: 17vw;
+  }
+.stat-text{
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #555;
+  margin-left: 10px;
+}
+.stat-number {
+  display: block;
+  font-weight: 700;
+  font-size: 30px;
+  color: black;
+  
+}
