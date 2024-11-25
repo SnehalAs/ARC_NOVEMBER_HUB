@@ -1,7 +1,6 @@
 .newsletter-container{
     background: linear-gradient(to right, #625afa,#e1c5e4);
     height: 7rem;
-    /* padding: 5px 10px; */
     margin-bottom: 70px;
     margin-top: 70px;
 
@@ -43,12 +42,19 @@
 }
 
 .check{
+    border: transparent;
     background-color: #8d31e3 !important;
     border-radius: 3px;
     color: white;
-    padding: 16px ;
+    padding: 16px;
     margin-right: 6rem;
     border: transparent;
+    display: flex; 
+    align-items: center; 
+    gap: 8px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    margin-top: 20px;
 }
 
 

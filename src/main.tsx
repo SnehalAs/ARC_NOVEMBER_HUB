@@ -15,6 +15,7 @@ import CTA from './component/CTA/CTA'
 import BlogSection from './component/BlogSection/BlogSection'
 import Footer from './component/Footer/Footer'
 
+
 // import App from './App.tsx'
 
 createRoot(document.getElementById('root')!).render(

@@ -39,13 +39,14 @@ const Navbar = () => {
           src="src/assets/hubnexlogo.svg"
           alt="Hubnex Logo"
           className="header-bottom-logo"
+          style={{ marginLeft: "120px" }}
         />
 
         <nav className="header-bottom-links">
           {bottomLinks.map(({ text, icon }) => (
             <a key={text} href="#">
               {text} {icon}
-            </a>
+            </a> 
           ))}
         </nav>
 

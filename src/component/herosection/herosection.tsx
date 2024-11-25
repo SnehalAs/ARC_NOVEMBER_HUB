@@ -3,7 +3,8 @@ import { FaArrowRight  } from "react-icons/fa";
 import NumberTicker from '../../components/ui/number-ticker';
 import SparklesText from '../../components/ui/sparkles-text';
 
-const HeroSection = () => {
+const Hero = () => {
+  const formattedValue = 5910;
   return (
     <>
       <div className="text">
@@ -14,7 +15,7 @@ const HeroSection = () => {
             Clarity gives you the blocks & components you need to create
             a truly professional website, landing page, or admin panel for your SaaS.
             Clarity gives you the blocks & components you need. Clarity gives you the blocks.
-          </p>
+          </p> 
 
           <div className="btn-container">
             <button className="contact">
@@ -26,24 +27,40 @@ const HeroSection = () => {
           </div>
 
           <div className="company-stats">
-            <div className="company-info">
-              
-              <div className='stats'>
-            <div className='stat-item'>
-              <div className='avatars'>
-                <img src='src\assets\person1.svg' alt='User 1' />
-                <img src='src\assets\person2.svg' alt='User 2' />
-                <img src='src\assets\person3.svg' alt='User 3' />
-              </div>
-              <div className='stat-text'>
-                <span className='stat-number'>
-                  <NumberTicker value={910} />+
-                </span>
-                <span className="rtext1">Companies are using & it’s growing everyday</span>
-              </div>
-            </div>
-            </div>
-            </div>
+          
+
+<div className="stats-section">
+      <div className="stats-row">
+         <div className="avatars">
+           <img
+             src="src\assets\person1.svg"
+             alt="Avatar 1"
+             className="avatar"
+           />
+           <img
+             src="src\assets\person2.svg"
+             alt="Avatar 2"
+             className="avatar"
+           />
+           <img
+             src="src\assets\person3.svg"
+             alt="Avatar 3"
+             className="avatar"  />
+         </div>
+         <div className="stats">
+           <NumberTicker
+             value={formattedValue}
+             direction="up"
+            //  delay={30}
+             decimalPlaces={0}
+             className="ticker"
+           />
+           <span className="plus-sign">+</span>
+         </div>
+       </div>
+       <p>Companies are using & it's growing every day</p>
+    </div>
+
 
             <div className="divider"></div>
             <div className='Mystat-item'>
@@ -59,8 +76,6 @@ const HeroSection = () => {
           <img className="img" src="src\assets\hero (1).png" alt="Hero" />
         </div>
       </div>
-
-      {/* <h3 className='join'>Join 4,000+ companies already growing</h3> */}
       <span className='join'>Join 4,000+ companies already growing</span>
 
       <div className="marquee-container">
@@ -75,4 +90,5 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default Hero;
+

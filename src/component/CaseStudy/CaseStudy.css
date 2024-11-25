@@ -15,29 +15,29 @@
 
 .carousel {
   max-width: 90%;
-  margin: 0 auto; /* Center the entire carousel */
+  margin: 0 auto; 
   position: relative;
 }
 
 .embla {
   overflow: hidden;
-  padding-bottom: 2rem; /* Add spacing for the buttons */
+  padding-bottom: 2rem; 
 }
 
 .embla__container {
   display: flex;
-  gap: 2rem; /* Adjust gap between slides */
+  gap: 2rem; 
 }
 
 .embla__slide {
-  flex: 0 0 100%; /* Ensure each slide takes full carousel width */
+  flex: 0 0 100%; 
   display: flex;
-  gap: 1rem; /* Space between grouped images */
-  justify-content: center; /* Center align images within the slide */
+  gap: 1rem; 
+  justify-content: center; 
 }
 
 .card {
-  width: 45%; /* Each card takes 45% of the slide width */
+  width: 45%; 
   height: 450px;
   border-radius: 15px;
   overflow: hidden;
@@ -55,13 +55,13 @@
 
 .carousel-controls {
   display: flex;
-  justify-content: center; /* Center the buttons horizontally */
-  gap: 1rem; /* Add spacing between the buttons */
-  margin-top: 1rem; /* Add spacing between the buttons and the carousel */
+  justify-content: center; 
+  gap: 1rem; 
+  margin-top: 1rem; 
 }
 
 .carousel-button {
-  background-color: #d9e4ef; /* Button color */
+  background-color: #d9e4ef; 
   color: white;
   border: none;
   font-size: 1.2rem;
@@ -73,7 +73,7 @@
 }
 
 .carousel-button:hover {
-  background-color: #64e2fc; /* Darker shade on hover */
+  background-color: #64e2fc; 
 }
 
 
@@ -81,28 +81,28 @@
   background-color: black;
   color: white;
   padding: 15px;
-  border-radius: 0 0 15px 15px; /* Rounded corners for the bottom part */
+  border-radius: 0 0 15px 15px; 
   z-index: 1;
   text-align: left;
 }
 
 
 .tag {
-  position: absolute; /* Position relative to the card */
-  top: 10px; /* Vertical position inside the image */
-  right: 10px; /* Horizontal position inside the image */
-  background-color: #0f0e0e; /* Add a background color for the tag */
-  color: white; /* Text color */
-  padding: 5px 10px; /* Add padding for better appearance */
-  border-radius: 12px; /* Rounded corners */
-  font-size: 14px; /* Font size for the tag */
-  font-weight: bold; /* Make text bold */
-  text-transform: uppercase; /* Optional: Capitalize the text */
-  z-index: 2; /* Ensure it appears above other elements */
+  position: absolute; 
+  top: 10px; 
+  right: 10px; 
+  background-color: #0f0e0e;
+  color: white; 
+  padding: 5px 10px;
+  border-radius: 12px; 
+  font-size: 14px; 
+  font-weight: bold;
+  text-transform: uppercase; 
+  z-index: 2; 
 }
 
 .card {
-  background: no-repeat center/cover; /* Ensure the background image behaves properly */
+  background: no-repeat center/cover;
 }
 
 .card::before {
@@ -112,6 +112,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.1); /* Optional: Add an overlay effect */
-  z-index: 1; /* Ensure it appears below the tag */
+  background: rgba(0, 0, 0, 0.1); 
+  z-index: 1; 
 }

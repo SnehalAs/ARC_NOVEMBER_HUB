@@ -1,5 +1,5 @@
 import "./CTA.css";
-import { FaArrowRightLong } from "react-icons/fa6";
+import { FaArrowRight } from "react-icons/fa6";
 const CTA = () => {
   return (
     <div className='newsletter-container'>
@@ -16,11 +16,11 @@ const CTA = () => {
         <div className='newsletter-header-right'>
           <button className='check'>
             Check Now!
-            <FaArrowRightLong />
+            <FaArrowRight />
           </button>
         </div>
       </div>
-    </div>
+    </div> 
   );
 };
 

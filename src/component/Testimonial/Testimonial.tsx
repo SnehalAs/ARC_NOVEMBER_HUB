@@ -1,39 +1,3 @@
-// import React from "react";
-// import "./Testimonial.css";
-
-// const Testimonial: React.FC = () => {
-//   return (
-//     <section className="testimonial">
-//       <p className="testimonial-subtitle">3940+ Happy Hubnex Labs Users</p>
-//       <h2 className="testimonial-title">Driving results for leaders across the globe</h2>
-      
-//       <div className="testimonial-author">
-//         <img
-//           src="src\assets\Slack-Logo.png" // Replace with the Slack logo
-//           alt="Slack logo"
-//           className="testimonial-logo"
-//         />
-//         <div>
-//         <h2 className="testimonial-title">Driving results for leaders across the globe</h2>
-      
-//         <blockquote className="testimonial-quote">
-//         “People now recognise that having a good performance conversation means
-//         that something happens as a result. People now recognise that having a good performance conversation means
-//         that something happens as a result. People now recognise that having a good performance conversation means
-//         that something happens as a result”
-//       </blockquote>
-//           <strong>Slack</strong>
-//           <p>Product Company</p>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Testimonial;
-// //
-
-/** @format */
 import React, { useRef } from "react";
 import "./Testimonial.css";
 
@@ -43,7 +7,7 @@ const Testimonial: React.FC = () => {
   let startX: number, scrollLeft: number;
 
   const handleMouseDown = (e: React.MouseEvent) => {
-    if (e.button !== 0) return; // Only proceed if left mouse button is pressed
+    if (e.button !== 0) return; 
     isDragging = true;
     startX = e.pageX - (sliderRef.current?.offsetLeft || 0);
     scrollLeft = sliderRef.current?.scrollLeft || 0;
@@ -61,7 +25,7 @@ const Testimonial: React.FC = () => {
     if (!isDragging || !sliderRef.current) return;
     e.preventDefault();
     const x = e.pageX - sliderRef.current.offsetLeft;
-    const walk = (x - startX) * 2; // Adjust scroll speed
+    const walk = (x - startX) * 2; 
     sliderRef.current.scrollLeft = scrollLeft - walk;
   };
 
@@ -84,7 +48,7 @@ const Testimonial: React.FC = () => {
             <img src='src\assets\slack-logo.svg' alt='' />
           </div>
           <div className='right'>
-            <h1>Driving results for leaders across the globe</h1>
+            <h2>"People now recognise that having a good performance conversation means that something happens as a result."</h2>
             <p>
               “With Landingfolio, the design team can now build design which
               identifies employees’ career aspirations and goals and from which
@@ -99,7 +63,7 @@ const Testimonial: React.FC = () => {
             <img src='src\assets\facebook.svg' alt='' />
           </div>
           <div className='right'>
-            <h1>Driving results for leaders across the globe</h1>
+            <h2>"People now recognise that having a good performance conversation means that something happens as a result."</h2>
             <p>
               “With Landingfolio, the design team can now build design which
               identifies employees’ career aspirations and goals and from which
@@ -114,7 +78,7 @@ const Testimonial: React.FC = () => {
             <img src='src\assets\google.svg' alt='' />
           </div>
           <div className='right'>
-            <h1>Driving results for leaders across the globe</h1>
+            <h2>"People now recognise that having a good performance conversation means that something happens as a result."</h2>
             <p>
               “With Landingfolio, the design team can now build design which
               identifies employees’ career aspirations and goals and from which
