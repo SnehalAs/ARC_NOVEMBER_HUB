@@ -3,7 +3,7 @@ import { FaArrowRight  } from "react-icons/fa";
 import NumberTicker from '../../components/ui/number-ticker';
 import SparklesText from '../../components/ui/sparkles-text';
 
-const Hero = () => {
+const HeroSection = () => {
   const formattedValue = 5910;
   return (
     <>
@@ -51,7 +51,6 @@ const Hero = () => {
            <NumberTicker
              value={formattedValue}
              direction="up"
-            //  delay={30}
              decimalPlaces={0}
              className="ticker"
            />
@@ -90,5 +89,5 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default HeroSection;
 
