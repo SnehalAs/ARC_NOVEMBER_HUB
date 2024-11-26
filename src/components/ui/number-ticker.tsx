@@ -3,7 +3,8 @@
 import { useEffect, useRef } from "react";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 
-import { cn } from "@/lib/utils";
+// import { cn } from "@/lib/utils";
+import { cn } from "../../lib/utils";
 
 export default function NumberTicker({
   value,
@@ -27,11 +28,18 @@ export default function NumberTicker({
   const isInView = useInView(ref, { once: true, margin: "0px" });
 
   useEffect(() => {
-    isInView &&
+    // isInView &&
+    //   setTimeout(() => {
+    //     motionValue.set(direction === "down" ? 0 : value);
+    //   }, delay * 1000);
+    if (isInView) {
       setTimeout(() => {
         motionValue.set(direction === "down" ? 0 : value);
       }, delay * 1000);
-  }, [motionValue, isInView, delay, value, direction]);
+    }
+  }, 
+  [motionValue, isInView, delay, value, direction]
+);
 
   useEffect(
     () =>
