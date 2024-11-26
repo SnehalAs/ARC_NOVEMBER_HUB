@@ -36,7 +36,7 @@ const Navbar = () => {
      
       <div className="header-bottom">
         <img
-          src="src/assets/hubnexlogo.svg"
+          src="public/assets/hubnexlogo.svg"
           alt="Hubnex Logo"
           className="header-bottom-logo"
           style={{ marginLeft: "120px" }}

@@ -17,9 +17,9 @@ import {
 import Globe from "./globe.png"; 
 
 
-import DailyhuntLogo from "../../assets/publish1.svg";
-import TOILogo from "../../assets/publish2.svg";
-import HindustanLogo from "../../assets/publish3.svg";
+import DailyhuntLogo from "/assets/publish1.svg";
+import TOILogo from "/assets/publish1.svg";
+import HindustanLogo from "/assets/publish1.svg";
 
 const StatsSection: React.FC = () => {
   return (

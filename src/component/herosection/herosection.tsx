@@ -33,17 +33,17 @@ const HeroSection = () => {
       <div className="stats-row">
          <div className="avatars">
            <img
-             src="src\assets\person1.svg"
+             src="public\assets\person1.svg"
              alt="Avatar 1"
              className="avatar"
            />
            <img
-             src="src\assets\person2.svg"
+             src="public\assets\person2.svg"
              alt="Avatar 2"
              className="avatar"
            />
            <img
-             src="src\assets\person3.svg"
+             src="public\assets\person3.svg" 
              alt="Avatar 3"
              className="avatar"  />
          </div>
@@ -72,17 +72,17 @@ const HeroSection = () => {
         </div>
 
         <div>
-          <img className="img" src="src\assets\hero (1).png" alt="Hero" />
+          <img className="img" src="public\assets\hero (1).png" alt="Hero" />
         </div>
       </div>
       <span className='join'>Join 4,000+ companies already growing</span>
 
       <div className="marquee-container">
         <div className="marquee">
-          <img src="src\assets\companylogo1.svg" alt="Company Logo" width="100" />
-          <img src="src\assets\companylogo2.svg" alt="Company Logo" width="100" />
-          <img src="src\assets\companylogo3.svg" alt="Company Logo" width="100" />
-          <img src="src\assets\companylogo4.svg" alt="Company Logo" width="100" />
+          <img src="public\assets\companylogo1.svg" alt="Company Logo" width="100" />
+          <img src="public\assets\companylogo2.svg" alt="Company Logo" width="100" />
+          <img src="public\assets\companylogo3.svg" alt="Company Logo" width="100" />
+          <img src="public\assets\companylogo4.svg" alt="Company Logo" width="100" />
         </div>
       </div>
     </>

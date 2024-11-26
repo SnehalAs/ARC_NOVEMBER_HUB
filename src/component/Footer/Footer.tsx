@@ -30,7 +30,7 @@ const Footer = () => {
         <div className='footer-section about'>
         <div className="logo-container">
       <img
-        src="src\assets\hubnexlogo.svg"
+        src="public\assets\hubnexlogo.svg"
         alt="Hubnex Logo"
         className="logo-image"
       />
