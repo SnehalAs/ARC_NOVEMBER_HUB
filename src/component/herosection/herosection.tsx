@@ -5,7 +5,7 @@ import SparklesText from '../../components/ui/sparkles-text';
 
 const HeroSection = () => {
   const formattedValue = 5910;
-  return (
+  return ( 
     <>
       <div className="text">
         <div className="left-content">
@@ -91,3 +91,4 @@ const HeroSection = () => {
 
 export default HeroSection;
 
+ 

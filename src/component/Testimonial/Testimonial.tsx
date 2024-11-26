@@ -15,7 +15,7 @@ const Testimonial: React.FC = () => {
 
   const handleMouseLeave = () => {
     isDragging = false;
-  };
+  }; 
 
   const handleMouseUp = () => {
     isDragging = false;

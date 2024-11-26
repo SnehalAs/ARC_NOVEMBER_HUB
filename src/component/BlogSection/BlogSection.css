@@ -1,42 +1,42 @@
-.case-study-section{
+.case-study-sections{
   background:  linear-gradient(to bottom, #1607e9, #000000);;
 }
 
-.case-study-header h1{
+.case-study-headers h1{
   font-size: 3rem;
   font-weight: 700;
   color: white;
 }
-.case-study-header p{
+.case-study-headers p{
  font-size: 1.5rem;
  margin-left: 100px;
  color: white;
 }
 
-.carousel {
+.carousels {
   max-width: 90%;
   margin: 0 auto; 
   position: relative;
 }
 
-.embla {
+.emblas {
   overflow: hidden;
   padding-bottom: 2rem; 
 }
 
-.embla__container {
+.embla__containers {
   display: flex;
   gap: 2rem; 
 }
 
-.embla__slide {
+.embla__slides {
   flex: 0 0 100%; 
   display: flex;
   gap: 1rem; 
   justify-content: center; 
 }
 
-.card {
+.cards {
   width: 45%; 
   height: 450px;
   border-radius: 15px;
@@ -60,7 +60,7 @@
   margin-top: 1rem; 
 }
 
-.carousel-button {
+.carousel-buttons {
   background-color: #d9e4ef; 
   color: white;
   border: none;
@@ -72,36 +72,41 @@
   margin-bottom: 130px;
 }
 
-.carousel-button:hover {
+.carousel-buttons:hover {
   background-color: #64e2fc; 
 }
 
-
-.card-content{
-  /* background-color: black; */
+.card-contents {
   color: white;
   padding: 15px;
-  border-radius: 0 0 15px 15px; 
+  border-radius: 0 0 15px 15px;
   z-index: 1;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: white;
 }
 
 
-.tag {
-  position: absolute; 
-  top: 10px; 
-  right: 10px; 
-  
-  color: white;
-  padding: 5px 10px; 
-  border-radius: 12px; 
-  font-size: 14px; 
-  font-weight: bold; 
+.tags {
+  position: relative; 
+  margin-bottom: 10px; 
+  background-color: white;
+  color: black;
+  border: 1px solid red;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: bold;
   text-transform: uppercase;
   z-index: 2;
+  display: inline-block; 
+  margin-left: 10px;
 }
 
-.card {
+
+.cards {
   background: no-repeat center/cover; 
 }
 
@@ -114,4 +119,30 @@
   bottom: 0;
   background: rgba(0, 0, 0, 0.1); 
   z-index: 1;
+}
+.read-mores {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: black;
+  text-decoration: none; 
+  font-weight: 500;
+}
+
+.read-mores svg {
+  position: relative;
+  top: 2px;
+  font-size: 1rem; 
+}
+.connect-sales-buttons{
+  background-color: #007bff;
+  color: black;
+  margin: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+ 
+}
+
+.connect-sales-buttons:hover{
+  background-color: #706e6e;
 }

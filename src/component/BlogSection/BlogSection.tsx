@@ -1,43 +1,45 @@
 import React from "react";
 import useEmblaCarousel from "embla-carousel-react";
+import { RxArrowTopRight } from "react-icons/rx";
+
 import "./BlogSection.css";
 
 const items = [
   {
-    tag: "FINANCE",
-    title: "What is Ad Exposure and Why It Matters?",
-    description: "Ad exposure impacts user engagement and brand growth. Learn why it matters.",
-    image: "src/assets/support.svg",
+    tags: "FINANCE",
+    titles: "What is Ad Exposure and Why It Matters?",
+    descriptions: "Ad exposure impacts user engagement and brand growth. Learn why it matters.",
+    images: "src/assets/support.svg",
   },
   {
-    tag: "BUSINESS",
-    title: "Unlocking New Business Opportunities",
-    description: "Discover strategies to tap into new markets and grow your business effectively.",
-    image: "src/assets/business1.svg",
+    tags: "BUSINESS",
+    titles: "Unlocking New Business Opportunities",
+    descriptions: "Discover strategies to tap into new markets and grow your business effectively.",
+    images: "src/assets/business1.svg",
   },
   {
-    tag: "MARKETING",
-    title: "Innovative Tech Solutions",
-    description: "Explore the latest advancements in technology and their business impact.",
-    image: "src/assets/support.svg",
+    tags: "MARKETING",
+    titles: "Innovative Tech Solutions",
+    descriptions: "Explore the latest advancements in technology and their business impact.",
+    images: "src/assets/support.svg",
   },
   {
-    tag: "TECH",
-    title: "AI in Modern Business",
-    description: "Learn how AI is transforming industries worldwide.",
-    image: "src/assets/support.svg",
+    tags: "TECH",
+    titles: "AI in Modern Business",
+    descriptions: "Learn how AI is transforming industries worldwide.",
+    images: "src/assets/support.svg",
   },
   {
-    tag: "MARKETING",
-    title: "Innovative Tech Solutions",
-    description: "Explore the latest advancements in technology and their business impact.",
-    image: "src/assets/business1.svg",
+    tags: "MARKETING",
+    titles: "Innovative Tech Solutions",
+    descriptions: "Explore the latest advancements in technology and their business impact.",
+    images: "src/assets/business1.svg",
   },
   {
-    tag: "TECH",
-    title: "AI in Modern Business",
-    description: "Learn how AI is transforming industries worldwide.",
-    image: "src/assets/support.svg",
+    tags: "TECH",
+    titles: "AI in Modern Business",
+    descriptions: "Learn how AI is transforming industries worldwide.",
+    images: "src/assets/support.svg",
   },
 ];
 
@@ -54,39 +56,53 @@ const BlogSection: React.FC = () => {
   }
 
   return (
-    <section className="case-study-section">
-      <div className="case-study-header">
+    <section className="case-study-sections">
+      <div className="case-study-headers">
         <h1>Blogs</h1>
         <p>
         Explore the impact we've delivered
         </p>
-        <button className="connect-sales-button">View All →</button>
+        <button className="connect-sales-buttons">View All →</button>
       </div>
 
-      <div className="carousel">
-        <div className="embla" ref={emblaRef}>
-          <div className="embla__container">
+      <div className="carousels">
+        <div className="emblas" ref={emblaRef}>
+          <div className="embla__containers">
             {groupedItems.map((group, groupIndex) => (
-              <div className="embla__slide" key={groupIndex}>
+              <div className="embla__slides" key={groupIndex}>
                 {group.map((item, index) => (
-                  <div
-                    className="card"
-                    key={index}
-                    style={{
-                      backgroundImage: `url(${item.image})`,
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                    }}
-                  >
-                    <div className="tag">{item.tag}</div>
-                    <div className="card-content">
-                      <h3>{item.title}</h3>
-                      <p>{item.description}</p>
-                      <a href="#" className="read-more">
-                        Read more →
-                      </a>
+                  // <div
+                  //   className="card"
+                  //   key={index}
+                  //   style={{
+                  //     backgroundImage: `url(${item.image})`,
+                  //     backgroundSize: "cover",
+                  //     backgroundPosition: "center",
+                  //   }}
+                  // >
+                  //   <div className="tag">{item.tag}</div>
+                  //   <div className="card-content">
+                  //     <h3>{item.title}</h3>
+                  //     <p>{item.description}</p>
+                  //     <a href="#" className="read-more">
+                  //       Read more →
+                  //     </a>
+                  //   </div>
+                  // </div>
+
+                  <div className="cards" key={index} style={{
+                    backgroundImage: `url(${item.images})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}>
+                    <div className="card-contents">
+                      <div className="tags">{item.tags}</div>
+                      <h3>{item.titles}</h3>
+                      <p>{item.descriptions}</p>
+                      <a href="#" className="read-mores">Read more <RxArrowTopRight /></a>
                     </div>
                   </div>
+                  
                 ))}
               </div>
             ))}
@@ -94,10 +110,10 @@ const BlogSection: React.FC = () => {
         </div>
 
         <div className="carousel-controls">
-          <button onClick={scrollPrev} className="carousel-button">
+          <button onClick={scrollPrev} className="carousel-buttons">
             ←
           </button>
-          <button onClick={scrollNext} className="carousel-button">
+          <button onClick={scrollNext} className="carousel-buttons">
             →
           </button>
         </div>
@@ -106,4 +122,4 @@ const BlogSection: React.FC = () => {
   );
 };
 
-export default BlogSection;
+export default BlogSection; 

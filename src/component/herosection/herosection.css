@@ -73,11 +73,11 @@ p {
   width: 50%;
 
 }
-.small-text{
-  font-size: 3rem;
+.text  .small-text{
+  font-size: 3.5rem;
   text-align: left;
   margin-bottom: 15px;
-  font-weight: 1rem;
+  font-weight: 550;
 }
 
 .para {
@@ -115,18 +115,31 @@ p {
   overflow: hidden;
   white-space: nowrap;
   width: 100%;
+  
 }
 
 .marquee {
   display: flex;
-  animation: marquee 20s linear infinite;
+  animation: marquee 40s linear infinite;
+ 
 }
 
 .marquee img {
   margin: 40px;
   border-radius: 10%;
-  padding: 10px;
+  width: 200px;
+  height: auto;
+  
 }
+
+
+@media (max-width: 768px) {
+  .marquee img {
+    width: 80px;
+    margin: 20px;
+  }
+}
+
 
 @keyframes marquee {
   from {
