@@ -6,7 +6,7 @@ const CTA = () => {
       <div className='newsletter-header'>
         <div className='newsletter-header-left'>
           <div className='inner-left'>
-            <img src='src\assets\crown.svg' alt='' />
+            <img src='public\assets\crown.svg' alt='' />
           </div>
           <div className='inner-right'>
             <p>Work Better, together</p>
