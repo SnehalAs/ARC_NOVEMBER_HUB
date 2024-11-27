@@ -1,14 +1,14 @@
 import { Routes, Route } from 'react-router-dom';
-import Navbar from './component/navbar/navbar';
-import Footer from './component/Footer/Footer';
-import HeroSection from './component/herosection/herosection';
-import Benefits from './component/benifits/benifits';
-import StatsSection from './component/StatsSection/StatsSection';
-import CaseStudy from './component/CaseStudy/CaseStudy';
-import BigEnough from './component/BigEnough/BigEnough';
-import Testimonial from './component/Testimonial/Testimonial';
-import CTA from './component/CTA/CTA';
-import BlogSection from './component/BlogSection/BlogSection';
+import Navbar from './pages/navbar/navbar';
+import Footer from './pages/Footer/Footer';
+import HeroSection from './pages/herosection/herosection';
+import Benefits from './pages/benifits/benifits';
+import StatsSection from './pages/StatsSection/StatsSection';
+import CaseStudy from './pages/CaseStudy/CaseStudy';
+import BigEnough from './pages/BigEnough/BigEnough';
+import Testimonial from './pages/Testimonial/Testimonial';
+import CTA from './pages/CTA/CTA';
+import BlogSection from './pages/BlogSection/BlogSection';
 
 const App = () => {
   return (
