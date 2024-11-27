@@ -10,7 +10,7 @@ const Benefits = () => {
    
         <div className="benefit-card">
           <img
-            src="src\assets\ontimedelivery.svg"
+            src="/assets/ontimedelivery.svg"
             alt="On Time Delivery"
             className="card-image"
           />
@@ -27,7 +27,7 @@ const Benefits = () => {
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
           <img
-            src="src\assets\support.svg"
+            src="/assets/support.svg"
             alt="Project Manager"
             className="card-image"
           />
@@ -40,7 +40,7 @@ const Benefits = () => {
         
         <div className="benefit-card">
           <img
-            src="src\assets\satisfaction.svg"
+            src="/assets/satisfaction.svg"
             alt="Customer Satisfaction"
             className="card-image"
           />

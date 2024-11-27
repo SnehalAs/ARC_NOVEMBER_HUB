@@ -45,7 +45,7 @@ const Testimonial: React.FC = () => {
       >
         <div className='slider-item'>
           <div className='left'>
-            <img src='public\assets\slack-logo.svg' alt='' />
+            <img src='/assets/slack-logo.svg' alt='' />
           </div>
           <div className='right'>
             <h2>"People now recognise that having a good performance conversation means that something happens as a result."</h2>
@@ -60,7 +60,7 @@ const Testimonial: React.FC = () => {
         </div>
         <div className='slider-item'>
           <div className='left'>
-            <img src='public\assets\facebook.svg' alt='' />
+            <img src='/assets/facebook.svg' alt='' />
           </div>
           <div className='right'>
             <h2>"People now recognise that having a good performance conversation means that something happens as a result."</h2>
@@ -75,7 +75,7 @@ const Testimonial: React.FC = () => {
         </div>
         <div className='slider-item'>
           <div className='left'>
-            <img src='public\assets\google.svg' alt='' />
+            <img src='/assets/google.svg' alt='' />
           </div>
           <div className='right'>
             <h2>"People now recognise that having a good performance conversation means that something happens as a result."</h2>

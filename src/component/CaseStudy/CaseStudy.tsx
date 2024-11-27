@@ -7,25 +7,25 @@ const items = [
     tag: "FINANCE",
     title: "What is Ad Exposure and Why It Matters?",
     description: "Ad exposure impacts user engagement and brand growth. Learn why it matters.",
-    image: "public/assets/business1.svg",
+    image: "/assets/business1.svg",
   },
   {
     tag: "BUSINESS",
     title: "Unlocking New Business Opportunities",
     description: "Discover strategies to tap into new markets and grow your business effectively.",
-    image: "public/assets/business1.svg",
+    image: "/assets/business1.svg",
   },
   {
     tag: "MARKETING",
     title: "Innovative Tech Solutions",
     description: "Explore the latest advancements in technology and their business impact.",
-    image: "public/assets/business1.svg",
+    image: "/assets/business1.svg",
   },
   {
     tag: "TECH",
     title: "AI in Modern Business",
     description: "Learn how AI is transforming industries worldwide.",
-    image: "public/assets/business1.svg",
+    image: "/assets/business1.svg",
   },
 ];
 
@@ -35,7 +35,7 @@ const CaseStudy: React.FC = () => {
   const scrollPrev = () => emblaApi && emblaApi.scrollPrev();
   const scrollNext = () => emblaApi && emblaApi.scrollNext();
 
-  // Group items into pairs for two images per slide
+
   const groupedItems = [];
   for (let i = 0; i < items.length; i += 2) {
     groupedItems.push(items.slice(i, i + 2));

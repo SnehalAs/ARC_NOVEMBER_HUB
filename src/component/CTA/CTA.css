@@ -1,4 +1,4 @@
-.newsletter-container{
+/* .newsletter-container{
     background: linear-gradient(to right, #625afa,#e1c5e4);
     height: 7rem;
     margin-bottom: 70px;
@@ -101,4 +101,114 @@
       margin-top: 1rem;
       margin-right: 0;
     }
+  } */
+
+  .newsletter-container {
+    background: linear-gradient(to right, #625afa, #e1c5e4);
+    height: auto;
+    margin: 50px 0;
+    padding: 20px 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
+  
+  .newsletter-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* Crown-text left, button right */
+    flex-wrap: wrap; /* Wrap items for smaller screens */
+    gap: 1rem;
+  }
+  
+  .newsletter-header-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem; /* Space between crown and text */
+  }
+  
+  .inner-left img {
+    width: 2rem;
+    height: auto;
+  }
+  
+  .inner-right {
+    text-align: left; /* Align text to the left */
+  }
+  
+  .inner-right p {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: white;
+  }
+  
+  .inner-right h1 {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    color: white;
+  }
+  
+  .check {
+    background-color: #8d31e3;
+    border-radius: 5px;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: inline-flex; /* Makes the button an inline-flex container */
+    align-items: center; /* Centers the content vertically */
+    justify-content: center; /* Centers the content horizontally */
+    gap: 0.5rem; /* Adds space between text and icon */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .check:hover {
+    background-color: #7324c6;
+    transform: scale(1.05);
+  }
+  
+  .check svg {
+    display: inline; /* Ensures the icon is inline */
+    width: 1rem; /* Adjust as needed */
+    height: auto; /* Keeps the aspect ratio */
+  }
+  
+  @media (max-width: 768px) {
+    .newsletter-header {
+      flex-direction: column; /* Stack items vertically */
+      text-align: center;
+    }
+  
+    .newsletter-header-left {
+      flex-direction: column; /* Stack crown and text */
+      align-items: center;
+      gap: 0.5rem;
+    }
+  
+    .check {
+      margin-top: 1rem; /* Place button below content */
+      align-self: center; /* Center button on small screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .inner-left img {
+      width: 1.5rem;
+    }
+  
+    .inner-right h1 {
+      font-size: 1rem;
+    }
+  
+    .inner-right p {
+      font-size: 0.8rem;
+    }
+  
+    .check {
+      font-size: 0.8rem;
+      padding: 0.5rem 0.8rem;
+    }
+  }
+  

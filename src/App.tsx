@@ -12,7 +12,7 @@ import BlogSection from './component/BlogSection/BlogSection';
 
 const App = () => {
   return (
-    <>
+    <> 
       <Navbar />
       <Routes>
         <Route path="/" element={<HeroSection />} />

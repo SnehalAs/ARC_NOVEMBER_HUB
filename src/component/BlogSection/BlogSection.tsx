@@ -9,37 +9,37 @@ const items = [
     tags: "FINANCE",
     titles: "What is Ad Exposure and Why It Matters?",
     descriptions: "Ad exposure impacts user engagement and brand growth. Learn why it matters.",
-    images: "public/assets/support.svg",
+    images: "/assets/support.svg",
   },
   {
     tags: "BUSINESS",
     titles: "Unlocking New Business Opportunities",
     descriptions: "Discover strategies to tap into new markets and grow your business effectively.",
-    images: "public/assets/business1.svg",
+    images: "/assets/business1.svg",
   },
   {
     tags: "MARKETING",
     titles: "Innovative Tech Solutions",
     descriptions: "Explore the latest advancements in technology and their business impact.",
-    images: "public/assets/support.svg",
+    images: "/assets/support.svg",
   },
   {
     tags: "TECH",
     titles: "AI in Modern Business",
     descriptions: "Learn how AI is transforming industries worldwide.",
-    images: "public/assets/support.svg",
+    images: "/assets/support.svg",
   },
   {
     tags: "MARKETING",
     titles: "Innovative Tech Solutions",
     descriptions: "Explore the latest advancements in technology and their business impact.",
-    images: "public/assets/business1.svg",
+    images: "/assets/business1.svg",
   },
   {
     tags: "TECH",
     titles: "AI in Modern Business",
     descriptions: "Learn how AI is transforming industries worldwide.",
-    images: "public/assets/support.svg",
+    images: "/assets/support.svg",
   },
 ];
 
