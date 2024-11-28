@@ -22,7 +22,7 @@ const items = [
     image: "/assets/business1.svg",
   },
   {
-    tag: "TECH",
+    tag: "FINANCE",
     title: "AI in Modern Business",
     description: "Learn how AI is transforming industries worldwide.",
     image: "/assets/business1.svg",

@@ -1,80 +1,4 @@
-/* body {
-    margin: 0;
-    font-family: "Arial", sans-serif;
-    text-align: center;
-  }
-  
-  .hubnex-section {
-    padding: 50px 20px;
-  }
-  
-  .header h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .header p {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 20px;
-  }
-  
-  .connect-sales-button {
-    color: #fff;
-    background-color: #007bff;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-bottom: 100px;
-    margin-top: 30px;
-  }
-  
-  .connect-sales-button:hover {
-    background-color: #555;
-  }
-  
-  .integration-wrapper {
-    background: linear-gradient(270deg, #fdddfd, #95f4f9);
-    padding: 20px;
-    border-radius: 10px;
-    display: inline-block;
-    max-width: 100%;
-    width: auto;
-    text-align: left;
-  }
-  
-  .integrations-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .integration-card {
-    background-color: white;
-    padding: 20px 30px;
-    width: 150px;
-    text-align: center;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .integration-card h2 {
-    font-size: 1.5rem;
-    margin: 0;
-  }
-  
-  .integration-card p {
-    font-size: 1rem;
-    color: #333;
-    margin-top: 10px;
-  }
-   */
-
-   body {
+ body {
     margin: 0;
     font-family: "Arial", sans-serif;
     text-align: center;
@@ -127,14 +51,14 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px; /* Add spacing between cards */
+    gap: 20px; 
   }
   
   .integration-card {
     background-color: white;
     padding: 20px 30px;
-    width: 100%; /* Default for smaller screens */
-    max-width: 150px; /* Constrain the width */
+    width: 100%;
+    max-width: 150px; 
     text-align: center;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -151,42 +75,42 @@
     margin-top: 10px;
   }
   
-  /* Responsive styles */
+ 
   @media (min-width: 576px) {
     .integration-card {
-      width: 200px; /* Slightly larger on tablets */
+      width: 200px; 
     }
   }
   
   @media (min-width: 768px) {
     .header h1 {
-      font-size: 2.5rem; /* Larger heading on tablets */
+      font-size: 2.5rem; 
     }
   
     .header p {
-      font-size: 1.2rem; /* Slightly larger paragraph text */
+      font-size: 1.2rem; 
     }
   
     .integrations-container {
-      gap: 30px; /* Increase spacing between cards */
+      gap: 30px; 
     }
   }
   
   @media (min-width: 1200px) {
     .hubnex-section {
-      padding: 70px 40px; /* Add more padding on larger screens */
+      padding: 70px 40px; 
     }
   
     .integration-card {
-      width: 250px; /* Larger cards on desktops */
+      width: 250px;
     }
   
     .header h1 {
-      font-size: 3rem; /* Larger heading for desktops */
+      font-size: 3rem; 
     }
   
     .header p {
-      font-size: 1.5rem; /* Larger paragraph text */
+      font-size: 1.5rem; 
     }
   }
   

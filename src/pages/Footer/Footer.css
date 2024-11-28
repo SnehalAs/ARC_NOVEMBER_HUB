@@ -245,21 +245,49 @@
   width: 100%;
 }
 .Contact-upper {
-  background: linear-gradient(to right, #000000, #202020, #414141, #5d5c5c);
+  background: linear-gradient(to right, #000000, #202020, #414141, #5d5c5c); 
   max-width: 80vw;
   margin: 0 auto;
-  height: 160px;
+  height: 180px;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   border-radius: 10px;
+  position: relative;
+  overflow: hidden; 
 }
+
+.Contact-upper::before,
+.Contact-upper::after {
+  content: "";
+  position: absolute;
+  background-color: linear-gradient(to right, #000000, #202020, #414141, #5d5c5c);
+  border: 1px solid white;
+  border-radius: 50%; 
+  width: 200px; 
+  height: 200px; 
+  
+}
+
+.Contact-upper::before {
+  top: -100px; 
+  left: -100px; 
+}
+
+.Contact-upper::after {
+  bottom: -100px;
+  right: -100px; 
+}
+
 .Contact-upper h1 {
   font-size: 30px;
   font-weight: bold;
+  z-index: 1; 
+  margin-bottom: 20px;
 }
+
 .connect {
   background-color: transparent;
   margin-top: 1rem;
@@ -275,7 +303,7 @@
   border: 1.5px solid white;
   border-radius: 4px;
   height: 44px;
-  padding: 0 20px;
+  padding: 10px 30px;
   cursor: pointer;
   display: flex;
   align-items: center;

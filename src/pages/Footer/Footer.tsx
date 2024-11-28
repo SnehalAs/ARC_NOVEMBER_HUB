@@ -14,7 +14,7 @@ const Footer = () => {
       <div className='Contact-upper'>
         <h1>See all that you can accomplish with Hubnex Labs</h1>
         <button className="contact">
-              Contact Us <FaArrowRight />
+              Contact Sales <FaArrowRight />
             </button>
       </div>
       <div className='Contact-lower'>

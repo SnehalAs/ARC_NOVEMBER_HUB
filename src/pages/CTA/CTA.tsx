@@ -15,7 +15,7 @@ const CTA = () => {
         </div>
         <div className='newsletter-header-right'>
           <button className='check'>
-            Check Now!
+            Check Now! 
             <FaArrowRight />
           </button>
         </div>

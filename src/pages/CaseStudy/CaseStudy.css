@@ -1,122 +1,3 @@
-/* .case-study-section{
-  background:  linear-gradient(to bottom, #1607e9, #000000);;
-}
-
-.case-study-header h1{
-  font-size: 3rem;
-  font-weight: 700;
-  color: white;
-}
-.case-study-header p{
- font-size: 1.5rem;
- margin-left: 100px;
- color: white;
-}
-
-.carousel {
-  max-width: 90%;
-  margin: 0 auto; 
-  position: relative;
-}
-
-.embla {
-  overflow: hidden;
-  padding-bottom: 2rem; 
-}
-
-.embla__container {
-  display: flex;
-  gap: 2rem; 
-}
-
-.embla__slide {
-  flex: 0 0 100%; 
-  display: flex;
-  gap: 1rem; 
-  justify-content: center; 
-}
-
-.card {
-  width: 45%; 
-  height: 450px;
-  border-radius: 15px;
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-}
-
-.card:hover {
-  transform: scale(1.05);
-}
-
-.carousel-controls {
-  display: flex;
-  justify-content: center; 
-  gap: 1rem; 
-  margin-top: 1rem; 
-}
-
-.carousel-button {
-  background-color: #d9e4ef; 
-  color: white;
-  border: none;
-  font-size: 1.2rem;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  margin-bottom: 130px;
-}
-
-.carousel-button:hover {
-  background-color: #64e2fc; 
-}
-
-
-.card-content{
-  background-color: black;
-  color: white;
-  padding: 15px;
-  border-radius: 0 0 15px 15px; 
-  z-index: 1;
-  text-align: left;
-}
-
-
-.tag {
-  position: absolute; 
-  top: 10px; 
-  right: 10px; 
-  background-color: #0f0e0e;
-  color: white; 
-  padding: 5px 10px;
-  border-radius: 12px; 
-  font-size: 14px; 
-  font-weight: bold;
-  text-transform: uppercase; 
-  z-index: 2; 
-}
-
-.card {
-  background: no-repeat center/cover;
-}
-
-.card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.1); 
-  z-index: 1; 
-} */
-
-
 .case-study-section {
   background: linear-gradient(to bottom, #1607e9, #000000);
   padding: 2rem 1rem;
@@ -130,11 +11,12 @@
 }
 
 .case-study-header p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 0 auto;
   color: white;
   text-align: center;
-  max-width: 600px;
+  max-width: 900px;
+ 
 }
 
 .carousel {
@@ -154,9 +36,11 @@
 }
 
 .embla__slide {
-  flex: 0 0 90%;
+  flex: 0 0 100%;
   display: flex;
   justify-content: center;
+  gap: 30px;
+  
 }
 
 .card {
@@ -198,13 +82,16 @@
   background-color: #64e2fc;
 }
 
-.card-content {
+.card-content  {
   background-color: black;
   color: white;
   padding: 15px;
   border-radius: 0 0 15px 15px;
   z-index: 1;
   text-align: left;
+}
+.card-content p{
+  color: white;
 }
 
 .tag {
@@ -213,15 +100,15 @@
   right: 10px;
   background-color: #0f0e0e;
   color: white;
-  padding: 5px 10px;
-  border-radius: 12px;
-  font-size: 0.8rem;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
   z-index: 2;
 }
 
-/* Media Queries for Responsiveness */
+
 @media (max-width: 768px) {
   .case-study-header h1 {
     font-size: 2rem;

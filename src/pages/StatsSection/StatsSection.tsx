@@ -14,12 +14,12 @@ import {
   GlobeImage,
   StatNumber,
 } from "./StatsSection.styles";
-import Globe from "./globe.png"; 
+import Globe from "/assets/globe.svg"; 
 
 
 import DailyhuntLogo from "/assets/publish1.svg";
-import TOILogo from "/assets/publish1.svg";
-import HindustanLogo from "/assets/publish1.svg";
+import TOILogo from "/assets/publish2.svg";
+import HindustanLogo from "/assets/publish3.svg";
 
 const StatsSection: React.FC = () => {
   return (
