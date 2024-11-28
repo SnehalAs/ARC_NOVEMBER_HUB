@@ -10,7 +10,7 @@ const Benefits = () => {
    
         <div className="benefit-card">
           <img
-            src="/assets/ontimedelivery.svg"
+            src="/assets/ontimedelivery.svg" 
             alt="On Time Delivery"
             className="card-image"
           />

@@ -38,7 +38,7 @@ const HeroSection = () => {
              className="avatar"
            />
            <img
-             src="/assets/person2.svg"
+             src="/assets/person2.svg" 
              alt="Avatar 2"
              className="avatar"
            />
