@@ -87,7 +87,7 @@ const BlogSection: React.FC = () => {
                   </div>
                   
                 ))}
-              </div>
+              </div> 
             ))}
           </div>
         </div>
