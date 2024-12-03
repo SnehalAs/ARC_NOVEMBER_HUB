@@ -1,5 +1,4 @@
-
-.stats-section {
+ /* .stats-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,7 +38,7 @@
 .ticker {
   font-size: 28px;
   font-weight: bold;
-  /* margin-left: 50px; */
+  
 }
 
 .plus-sign {
@@ -51,18 +50,6 @@ p {
   margin-top: 8px;
   font-size: 16px;
   color: #555;
-}
-
-
-
-.text {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 30px;
 }
 
 .left-content {
@@ -93,65 +80,6 @@ p {
   gap: 20px;
   color: white;
 }
-
-.img {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  flex: 1;
-  border-radius: 20px;
-}
-
-.join  {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  font-size: 1rem;
-  font-weight: bold;
-  margin-top: 40px;
-}
-
-.marquee-container {
-  overflow: hidden;
-  white-space: nowrap;
-  width: 100%;
-  
-}
-
-.marquee {
-  display: flex;
-  animation: marquee 40s linear infinite;
- 
-}
-
-.marquee img {
-  margin: 40px;
-  border-radius: 10%;
-  width: 200px;
-  height: auto;
-  
-}
-
-
-@media (max-width: 768px) {
-  .marquee img {
-    width: 80px;
-    margin: 20px;
-  }
-}
-
-
-@keyframes marquee {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-
-
 .company-images {
   display: flex;
   gap: 5px;
@@ -296,5 +224,210 @@ p {
   margin-left: 20px;
 }
 
+.text {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 50%;
+}
+
+.img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  flex: 1;
+  border-radius: 20px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+@media (max-width: 768px) {
+  .text {
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .left-content {
+    width: 100%; 
+    text-align: center; 
+    margin-bottom: 20px; 
+  }
+
+  .img {
+    max-width: 90%; 
+    border-radius: 15px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .text {
+    padding: 10px; 
+  }
+
+  .left-content {
+    margin-bottom: 15px; 
+  }
+
+  .img {
+    max-width: 100%; 
+    border-radius: 10px; 
+  }
+}
+
+.avatars {
+  display: flex;
+  margin-right: 40px;
+}
+
+.avatar, 
+.circle-img { 
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; 
+  margin-left: -10px; 
+  border: 2px solid white; 
+}
+
+
+@media (max-width: 768px) {
+  .avatar, 
+  .circle-img {
+    width: 60px; 
+    height: 60px;
+    margin-left: -10px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .avatar, 
+  .circle-img {
+    width: 60px;
+    height: 60px;
+    margin-left: -5px; 
+  }
+}
+
+.small-text {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.4; 
+  word-wrap: break-word; 
+  white-space: normal; 
+}
+
+
+
+
+@media (max-width: 768px) {
+  .small-text {
+    font-size: 1.5rem; 
+  }
+}
+
+
+@media (max-width: 499px) {
+  .small-text {
+    font-size: 2rem; 
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.4; 
+    word-wrap: break-word;
+    white-space: normal;
+  }
+}
+
+
+.join  {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+
 
   
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  
+}
+
+.marquee {
+  display: flex;
+  animation: marquee 40s linear infinite;
+ 
+}
+
+.marquee img {
+  margin: 40px;
+  border-radius: 10%;
+  width: 200px;
+  height: auto;
+  
+}
+
+
+@media (max-width: 768px) {
+  .marquee img {
+    width: 80px;
+    margin: 20px;
+  }
+}
+
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
+   
+
+
+ 
+
+ */
+
+
+ /* Marquee Effect */
+.marquee {
+  display: flex;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee-content {
+  display: flex;
+  gap: 2rem;
+}
+
+

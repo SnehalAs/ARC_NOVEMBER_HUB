@@ -1,94 +1,136 @@
+import { FaStar } from "react-icons/fa";
 import './herosection.css';
-import { FaArrowRight  } from "react-icons/fa"; 
+import SparklesText from "../../components/ui/sparkles-text";
 import NumberTicker from '../../components/ui/number-ticker';
-import SparklesText from '../../components/ui/sparkles-text';
+import { FaArrowRight  } from "react-icons/fa";
 
 const HeroSection = () => {
   const formattedValue = 5910;
-  return ( 
-    <>
-      <div className="text">
-        <div className="left-content">
-         
-        <SparklesText text = "SaaS Growth With Weekly Tips."  className='small-text'/>
-          <p className="para">
-            Clarity gives you the blocks & components you need to create
-            a truly professional website, landing page, or admin panel for your SaaS.
-            Clarity gives you the blocks & components you need. Clarity gives you the blocks.
-          </p> 
 
-          <div className="btn-container">
-            <button className="contact">
+  return (
+    <div className="bg-white">
+   
+      <div className="container mx-auto px-4 py-16 grid gap-8 lg:grid-cols-2 items-center">
+       
+        <div>
+          <h1 className="text-3xl sm:text-2xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-center lg:text-left">
+            <SparklesText text="SaaS Growth With Weekly Tips." />
+          </h1>
+          <p className="text-gray-600 mb-6 text-sm sm:text-base lg:text-lg text-center lg:text-left">
+            Clarity gives you the blocks & components you need to create a truly
+            professional website, landing page, or admin panel for your SaaS.
+            Clarity gives you the blocks & components you need. Clarity gives
+            you the blocks.
+          </p>
+
+          <div className="flex gap-4 flex-wrap mb-8 justify-center lg:justify-start">
+            <button className="flex items-center justify-center gap-2 px-6 py-3 border-2 border-gray-900 text-gray-900 rounded-lg hover:bg-gray-100 text-sm sm:text-base">
               Contact Us <FaArrowRight />
             </button>
-            <button className="Join">
+            <button className="flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 text-sm sm:text-base">
               Join Us <FaArrowRight />
             </button>
           </div>
 
-          <div className="company-stats">
+      
+          <div className="flex flex-col md:flex-row items-start gap-6 md:gap-8">
+           
+            <div className="flex items-center gap-4">
+              <div className="flex -space-x-3">
+                <img
+                  src="/assets/person1.svg"
+                  alt="Avatar 1"
+                  className="w-10 h-10 rounded-full border-2 border-white"
+                />
+                <img
+                  src="/assets/person2.svg"
+                  alt="Avatar 2"
+                  className="w-10 h-10 rounded-full border-2 border-white"
+                />
+                <img
+                  src="/assets/person3.svg"
+                  alt="Avatar 3"
+                  className="w-10 h-10 rounded-full border-2 border-white"
+                />
+              </div>
+              <div>
+                <div className="text-xl font-bold">
+                  <NumberTicker value={formattedValue} />
+                </div>
+                <p className="text-sm text-gray-600">
+                  Companies are using & it's growing every day
+                </p>
+              </div>
+            </div>
+
           
+            <div className="w-px bg-gray-300 h-16 hidden md:block"></div>
 
-<div className="stats-section">
-      <div className="stats-row">
-         <div className="avatars">
-           <img
-             src="/assets/person1.svg"
-             alt="Avatar 1"
-             className="avatar"
-           />
-           <img
-             src="/assets/person2.svg" 
-             alt="Avatar 2"
-             className="avatar"
-           />
-           <img
-             src="/assets/person3.svg" 
-             alt="Avatar 3"
-             className="avatar"  />
-         </div>
-         <div className="stats">
-           <NumberTicker
-             value={formattedValue}
-             direction="up"
-             decimalPlaces={0}
-             className="ticker"
-           />
-           <span className="plus-sign">+</span>
-         </div>
-       </div>
-       <p>Companies are using & it's growing every day</p>
-    </div>
-
-
-            <div className="divider"></div>
-            <div className='Mystat-item'>
-              <div className='Myrating My-rating'>
-                <span className='Mystat-number'>4.5/5<span className='Mystars'>★★★★★</span></span>
-                <span className="Myrtext" >Trusted by the top companies worldwide</span>
+           
+            <div className="flex flex-col items-start gap-1">
+             
+              <div className="flex items-center">
+                <span className="text-xl font-bold text-gray-800">4.5/5</span>
+                <span className="flex ml-2">
+                  {[...Array(5)].map((_, index) => (
+                    <span key={index} className="text-blue-600">
+                      <FaStar />
+                    </span>
+                  ))}
+                </span>
               </div>
-              </div>
-              </div>
+           
+              <p className="text-sm text-gray-600">
+                Trusted by the top companies worldwide
+              </p>
+            </div>
+          </div>
         </div>
 
-        <div>
-          <img className="img" src="/assets/hero (1).png" alt="Hero" />
+    
+        <div className="flex justify-center">
+          <img
+            className="rounded-lg shadow-lg max-w-full"
+            src="/assets/hero (1).png"
+            alt="Hero"
+          />
         </div>
       </div>
-      <span className='join'>Join 4,000+ companies already growing</span>
 
-      <div className="marquee-container">
+      
+      <div className="text-center mb-4 text-black-600 text-sm sm:text-base font-bold">
+        Join 4,000+ companies already growing
+      </div>
+      <div className="overflow-hidden">
         <div className="marquee">
-          <img src="/assets/companylogo1.svg" alt="Company Logo" width="100" />
-          <img src="/assets/companylogo2.svg" alt="Company Logo" width="100" />
-          <img src="/assets/companylogo3.svg" alt="Company Logo" width="100" />
-          <img src="/assets/companylogo4.svg" alt="Company Logo" width="100" />
+          <div className="marquee-content flex gap-8">
+            <img
+              src="/assets/companylogo1.svg"
+              alt="Logo 1"
+              className="w-35 h-35 object-contain"
+            />
+            <img
+              src="/assets/companylogo2.svg"
+              alt="Logo 2"
+              className="w-35 h-35 object-contain"
+            />
+            <img
+              src="/assets/companylogo3.svg"
+              alt="Logo 3"
+              className="w-35 h-35 object-contain"
+            />
+            <img
+              src="/assets/companylogo4.svg"
+              alt="Logo 4"
+              className="w-35 h-35 object-contain"
+            />
+          </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
 export default HeroSection;
 
- 
+

@@ -29,15 +29,20 @@ const Footer = () => {
       <div className='footer-content'>
         <div className='footer-section about'>
         <div className="logo-container">
-      <img
-        src="/assets/hubnexlogo.svg"
-        alt="Hubnex Logo"
-        className="logo-image"
-      />
+    
+       <div className="col-span-1">
+          <div className="flex items-center gap-2 mb-4">
+            <img
+              src="/assets/hubnexlogo.svg"
+              alt="Hubnex Logo"
+              className="w-12 h-auto"
+            />
       <div className="logo-textt">
         Hubnex
         <span className="logo-subtextt">Labs</span>
       </div>
+    </div>
+    </div>
     </div>
           <h2 >About Hubnex Labs</h2>
           <p>
@@ -96,4 +101,7 @@ const Footer = () => {
 };
 
 export default Footer;
+
+
+
 

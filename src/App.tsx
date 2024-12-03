@@ -10,6 +10,8 @@ import Testimonial from './pages/Testimonial/Testimonial';
 import CTA from './pages/CTA/CTA';
 import BlogSection from './pages/BlogSection/BlogSection';
 
+
+
 const App = () => {
   return (
     <> 
@@ -23,6 +25,8 @@ const App = () => {
         <Route path="/testimonials" element={<Testimonial />} />
         <Route path="/cta" element={<CTA />} />
         <Route path="/blog" element={<BlogSection />} />
+       
+
         <Route path="*" element={<h1>404 - Page Not Found</h1>} />
       </Routes>
       <Footer />
