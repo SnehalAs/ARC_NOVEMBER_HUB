@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import "./Testimonial.css";
 
 const Testimonial: React.FC = () => {
   const sliderRef = useRef<HTMLDivElement>(null);
@@ -7,7 +6,7 @@ const Testimonial: React.FC = () => {
   let startX: number, scrollLeft: number;
 
   const handleMouseDown = (e: React.MouseEvent) => {
-    if (e.button !== 0) return; 
+    if (e.button !== 0) return;
     isDragging = true;
     startX = e.pageX - (sliderRef.current?.offsetLeft || 0);
     scrollLeft = sliderRef.current?.scrollLeft || 0;
@@ -15,7 +14,7 @@ const Testimonial: React.FC = () => {
 
   const handleMouseLeave = () => {
     isDragging = false;
-  }; 
+  };
 
   const handleMouseUp = () => {
     isDragging = false;
@@ -25,67 +24,67 @@ const Testimonial: React.FC = () => {
     if (!isDragging || !sliderRef.current) return;
     e.preventDefault();
     const x = e.pageX - sliderRef.current.offsetLeft;
-    const walk = (x - startX) * 2; 
+    const walk = (x - startX) * 2;
     sliderRef.current.scrollLeft = scrollLeft - walk;
   };
 
   return (
     <>
-      <div className='slider-main-heading'>
-        <p>3940+ Happy Hubnex Labs Users</p>
-        <h1>Driving results for leaders across the globe</h1>
+      <div className="text-center my-8">
+        <p className="text-lg text-gray-600">3940+ Happy Hubnex Labs Users</p>
+        <h1 className="text-4xl font-bold text-gray-800 mt-4">Driving results for leaders across the globe</h1>
       </div>
       <div
-        className='slider-container'
+        className="relative flex overflow-hidden max-w-5xl mx-auto bg-white rounded-lg shadow-md"
         ref={sliderRef}
         onMouseDown={handleMouseDown}
         onMouseLeave={handleMouseLeave}
         onMouseUp={handleMouseUp}
         onMouseMove={handleMouseMove}
       >
-        <div className='slider-item'>
-          <div className='left'>
-            <img src='/assets/slack-logo.svg' alt='' />
-          </div>
-          <div className='right'>
-            <h2>"People now recognise that having a good performance conversation means that something happens as a result."</h2>
-            <p>
-              “With Landingfolio, the design team can now build design which
-              identifies employees’ career aspirations and goals and from which
-              we approach managers and check to see what is happening.”
-            </p>
-            <h1>Slack</h1>
-            <p>Product Company</p>
-          </div>
-        </div>
-        <div className='slider-item'>
-          <div className='left'>
-            <img src='/assets/facebook.svg' alt='' />
-          </div>
-          <div className='right'>
-            <h2>"People now recognise that having a good performance conversation means that something happens as a result."</h2>
-            <p>
-              “With Landingfolio, the design team can now build design which
-              identifies employees’ career aspirations and goals and from which
-              we approach managers and check to see what is happening.”
-            </p>
-            <h1>Facebook</h1>
-            <p>Product Company</p>
+        <div className="flex-shrink-0 w-full flex items-center px-8 py-4">
+          <div className="flex flex-col lg:flex-row items-center">
+            <div className="flex-shrink-0 flex justify-center items-center mb-4 lg:mb-0">
+              <img src="/assets/slack-logo.svg" alt="Slack logo" className="w-full max-w-xs" />
+            </div>
+            <div className="flex-1 text-left p-4">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-4">"People now recognise that having a good performance conversation means that something happens as a result."</h2>
+              <p className="text-gray-600 mb-4">
+                “With Landingfolio, the design team can now build design which identifies employees’ career aspirations and goals and from which we approach managers and check to see what is happening.”
+              </p>
+              <h1 className="text-lg font-bold mt-4">Slack</h1>
+              <p className="text-gray-500">Product Company</p>
+            </div>
           </div>
         </div>
-        <div className='slider-item'>
-          <div className='left'>
-            <img src='/assets/google.svg' alt='' />
+        <div className="flex-shrink-0 w-full flex items-center px-8 py-4">
+          <div className="flex flex-col lg:flex-row items-center">
+            <div className="flex-shrink-0 flex justify-center items-center mb-4 lg:mb-0">
+              <img src="/assets/facebook.svg" alt="Facebook logo" className="w-full max-w-xs" />
+            </div>
+            <div className="flex-1 text-left p-4">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-4">"People now recognise that having a good performance conversation means that something happens as a result."</h2>
+              <p className="text-gray-600 mb-4">
+                “With Landingfolio, the design team can now build design which identifies employees’ career aspirations and goals and from which we approach managers and check to see what is happening.”
+              </p>
+              <h1 className="text-lg font-bold mt-4">Facebook</h1>
+              <p className="text-gray-500">Product Company</p>
+            </div>
           </div>
-          <div className='right'>
-            <h2>"People now recognise that having a good performance conversation means that something happens as a result."</h2>
-            <p>
-              “With Landingfolio, the design team can now build design which
-              identifies employees’ career aspirations and goals and from which
-              we approach managers and check to see what is happening.”
-            </p>
-            <h1>Google</h1>
-            <p>Product Company</p>
+        </div>
+        <div className="flex-shrink-0 w-full flex items-center px-8 py-4">
+          <div className="flex flex-col lg:flex-row items-center">
+            <div className="flex-shrink-0 flex justify-center items-center mb-4 lg:mb-0">
+              <img src="/assets/google.svg" alt="Google logo" className="w-full max-w-xs" />
+            </div>
+            <div className="flex-1 text-left p-4">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-4">"People now recognise that having a good performance conversation means that something happens as a result."</h2>
+              <p className="text-gray-600 mb-4">
+                “With Landingfolio, the design team can now build design which identifies employees’ career aspirations and goals and from which we approach managers and check to see what is happening.”
+              </p>
+              <h1 className="text-lg font-bold mt-4">Google</h1>
+              <p className="text-gray-500">Product Company</p>
+            </div>
           </div>
         </div>
       </div>

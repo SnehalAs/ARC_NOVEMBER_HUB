@@ -1,102 +1,115 @@
 import React from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { RxArrowTopRight } from "react-icons/rx";
-
 import "./BlogSection.css";
 
 const items = [
   {
-    tags: "FINANCE",
+    tags: "Marketing",
     titles: "What is Ad Exposure and Why It Matters?",
-    descriptions: "Ad exposure impacts user engagement and brand growth. Learn why it matters.",
+    descriptions: "Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.",
     images: "/assets/support.svg",
   },
   {
-    tags: "BUSINESS",
-    titles: "Unlocking New Business Opportunities",
-    descriptions: "Discover strategies to tap into new markets and grow your business effectively.",
+    tags: "Marketing",
+    titles: "The Importance of Brand Awareness in 2024",
+    descriptions: "Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.",
     images: "/assets/business1.svg",
   },
   {
-    tags: "MARKETING",
-    titles: "Innovative Tech Solutions",
-    descriptions: "Explore the latest advancements in technology and their business impact.",
+    tags: "Marketing",
+    titles: "Top Digital Strategies for Small Businesses",
+    descriptions: "Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.",
     images: "/assets/support.svg",
   },
   {
-    tags: "TECH",
-    titles: "AI in Modern Business",
-    descriptions: "Learn how AI is transforming industries worldwide.",
+    tags: "Marketing",
+    titles: "What is Ad Exposure and Why It Matters?",
+    descriptions: "Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.",
     images: "/assets/support.svg",
   },
   {
-    tags: "MARKETING",
-    titles: "Innovative Tech Solutions",
-    descriptions: "Explore the latest advancements in technology and their business impact.",
+    tags: "Marketing",
+    titles: "The Importance of Brand Awareness in 2024",
+    descriptions: "Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.",
     images: "/assets/business1.svg",
   },
   {
-    tags: "TECH",
-    titles: "AI in Modern Business",
-    descriptions: "Learn how AI is transforming industries worldwide.",
+    tags: "Marketing",
+    titles: "Top Digital Strategies for Small Businesses",
+    descriptions: "Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.",
     images: "/assets/support.svg",
   },
 ];
 
 const BlogSection: React.FC = () => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+    loop: true,
+    slidesToScroll: 3, 
+    align: "start", 
+    
+  });
 
   const scrollPrev = () => emblaApi && emblaApi.scrollPrev();
   const scrollNext = () => emblaApi && emblaApi.scrollNext();
 
- 
-  const groupedItems = [];
-  for (let i = 0; i < items.length; i += 3) {
-    groupedItems.push(items.slice(i, i + 3));
-  }
-
   return (
-    <section className="case-study-sections">
-      <div className="case-study-headers">
-        <h1>Blogs</h1>
-        <p>
-        Explore the impact we've delivered
+    <section className="bg-gradient-to-b from-blue-800 to-black py-16">
+      <div className="text-center text-white">
+        <h1 className="text-4xl font-bold">Blogs</h1>
+        <p className="text-lg max-w-xl mx-auto mt-4">
+          Explore the impact we've delivered
         </p>
-        <button className="connect-sales-buttons">View All →</button>
+        <button className="mt-6 px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg">
+          View All →
+        </button>
       </div>
 
-      <div className="carousels">
-        <div className="emblas" ref={emblaRef}>
-          <div className="embla__containers">
-            {groupedItems.map((group, groupIndex) => (
-              <div className="embla__slides" key={groupIndex}>
-                {group.map((item, index) => (
-                  
-
-                  <div className="cards" key={index} style={{
-                    backgroundImage: `url(${item.images})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                  }}>
-                    <div className="card-contents">
-                      <div className="tags">{item.tags}</div>
-                      <h3>{item.titles}</h3>
-                      <p>{item.descriptions}</p>
-                      <a href="#" className="read-mores">Read more <RxArrowTopRight /></a>
-                    </div>
+      <div className="relative max-w-6xl mx-auto mt-10">
+     
+        <div className="embla" ref={emblaRef}>
+          <div className="embla__container">
+            {items.map((item, index) => (
+              <div className="embla__slide" key={index}>
+                <div className="bg-white rounded-lg shadow-lg">
+                  <img
+                    src={item.images}
+                    alt="Blog Image"
+                    className="w-full h-[200px] object-cover rounded-t-lg"
+                  />
+                  <div className="p-4">
+                    <span className="inline-block px-3 py-1 text-xs font-semibold text-purple-700 bg-purple-200 rounded-full">
+                      {item.tags}
+                    </span>
+                    <h3 className="text-lg font-semibold mt-2">{item.titles}</h3>
+                    <p className="text-gray-600 text-sm mt-1">
+                      {item.descriptions}
+                    </p>
+                    <a
+                      href="#"
+                      className="flex items-center gap-1 text-blue-600 font-medium mt-3 hover:underline"
+                    >
+                      Read Full Article <RxArrowTopRight />
+                    </a>
                   </div>
-                  
-                ))}
-              </div> 
+                </div>
+              </div>
             ))}
           </div>
         </div>
 
-        <div className="carousel-controls">
-          <button onClick={scrollPrev} className="carousel-buttons">
+       
+        <div className="flex justify-center gap-4 mt-6">
+          <button
+            onClick={scrollPrev}
+            className="px-4 py-2 bg-gray-700 text-white rounded-md hover:bg-gray-600"
+          >
             ←
           </button>
-          <button onClick={scrollNext} className="carousel-buttons">
+          <button
+            onClick={scrollNext}
+            className="px-4 py-2 bg-gray-700 text-white rounded-md hover:bg-gray-600"
+          >
             →
           </button>
         </div>
@@ -105,4 +118,4 @@ const BlogSection: React.FC = () => {
   );
 };
 
-export default BlogSection; 
+export default BlogSection;
