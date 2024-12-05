@@ -35,7 +35,7 @@ const Testimonial: React.FC = () => {
         <h1 className="text-4xl font-bold text-gray-800 mt-4">Driving results for leaders across the globe</h1>
       </div>
       <div
-        className="relative flex overflow-hidden max-w-5xl mx-auto bg-white rounded-lg shadow-md"
+        className="relative flex overflow-hidden max-w-5xl mx-auto bg-white rounded-lg "
         ref={sliderRef}
         onMouseDown={handleMouseDown}
         onMouseLeave={handleMouseLeave}
