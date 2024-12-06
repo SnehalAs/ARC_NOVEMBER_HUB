@@ -5,25 +5,25 @@ import "./CaseStudy.css";
 
 const items = [
   {
-    tag: "Marketing",
+    tag: "FINANCE",
     title: "What is Ad Exposure and Why It Matters?",
     description: "Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.",
     image: "/assets/business1.svg",
   },
   {
-    tag: "Marketing",
+    tag: "BUSINESS",
     title: "The Importance of Brand Awareness in 2024",
     description: "Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.",
     image: "/assets/business1.svg",
   },
   {
-    tag: "Marketing",
+    tag: "MARKETING",
     title: "Top Digital Strategies for Small Businesses",
     description: "Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.",
     image: "/assets/business1.svg",
   },
   {
-    tag: "Marketing",
+    tag: "FINANCE",
     title: "What is Ad Exposure and Why It Matters?",
     description: "Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.",
     image: "/assets/business1.svg",
@@ -60,24 +60,24 @@ const CaseStudy: React.FC = () => {
           <div className="embla__containers">
             {items.map((item, index) => (
               <div className="embla__slides" key={index}>
-                <div className="relative bg-white rounded-lg shadow-lg">
+                <div className="relative bg-black rounded-lg shadow-lg">
                   <img
                     src={item.image}
                     alt="Blog Image"
                     className="w-full h-[200px] object-cover rounded-t-lg"
                   />
                  
-                  <span className="tag-top-right">
+                  <span className="tag-top-right text-lg  bg-black text-white rounded-lg">
                     {item.tag}
                   </span>
                   <div className="p-4">
-                    <h3 className="text-lg font-semibold mt-2">{item.title}</h3>
-                    <p className="text-gray-600 text-sm mt-1">
+                    <h3 className="text-lg text-white font-semibold mt-2">{item.title}</h3>
+                    <p className="text-white text-sm mt-1">
                       {item.description}
                     </p>
                     <a
                       href="#"
-                      className="flex items-center gap-1 text-blue-600 font-medium mt-3 hover:underline"
+                      className="flex items-center gap-1 text-white font-medium mt-3 hover:underline"
                     >
                       Read Full Article <RxArrowTopRight />
                     </a>

@@ -5,13 +5,13 @@ import "./BlogSection.css";
 
 const items = [
   {
-    tags: "Marketing",
+    tags: "Finance",
     titles: "What is Ad Exposure and Why It Matters?",
     descriptions: "Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.",
     images: "/assets/support.svg",
   },
   {
-    tags: "Marketing",
+    tags: "Business",
     titles: "The Importance of Brand Awareness in 2024",
     descriptions: "Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.",
     images: "/assets/business1.svg",
@@ -23,13 +23,13 @@ const items = [
     images: "/assets/support.svg",
   },
   {
-    tags: "Marketing",
+    tags: "Finance",
     titles: "What is Ad Exposure and Why It Matters?",
     descriptions: "Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.",
     images: "/assets/support.svg",
   },
   {
-    tags: "Marketing",
+    tags: "Business",
     titles: "The Importance of Brand Awareness in 2024",
     descriptions: "Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.",
     images: "/assets/business1.svg",
@@ -78,18 +78,18 @@ const BlogSection: React.FC = () => {
                     className="w-full h-[200px] object-cover rounded-t-lg"
                   />
                   <div className="p-4">
-                    <span className="inline-block px-3 py-1 text-xs font-semibold text-purple-700 bg-purple-200 rounded-full">
+                    <span className="inline-block px-3 py-1 text-lg font-semibold text-black bg-white border-2 border-red-300 rounded-lg">
                       {item.tags}
                     </span>
-                    <h3 className="text-lg font-semibold mt-2">{item.titles}</h3>
-                    <p className="text-gray-600 text-sm mt-1">
+                    <h3 className="text-xl font-bold mt-2">{item.titles}</h3>
+                    <p className="text-gray-950 text-md mt-1">
                       {item.descriptions}
                     </p>
                     <a
                       href="#"
-                      className="flex items-center gap-1 text-blue-600 font-medium mt-3 hover:underline"
+                      className="flex items-center gap-1 text-black font-medium mt-3 hover:underline"
                     >
-                      Read Full Article <RxArrowTopRight />
+                      Read More <RxArrowTopRight />
                     </a>
                   </div>
                 </div>
