@@ -14,34 +14,77 @@ import BlogSection from './pages/BlogSection/BlogSection';
 const App: React.FC = () => {
   return (
     <>
+     
       <nav className="bg-teal-100 p-4">
-        <ul className="flex justify-center gap-6">
+        <ul className="flex flex-wrap justify-center gap-4 md:gap-6">
           <li>
-            <Link to="/" className="text-black hover:text-white hover:bg-gray-600 px-4 py-2 rounded">Home</Link>
+            <Link
+              to="/"
+              className="text-black text-sm md:text-base hover:text-white hover:bg-gray-600 px-3 md:px-4 py-2 rounded transition duration-300"
+            >
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/benefits" className="text-black hover:text-white hover:bg-gray-600 px-4 py-2 rounded">Benefits</Link>
+            <Link
+              to="/benefits"
+              className="text-black text-sm md:text-base hover:text-white hover:bg-gray-600 px-3 md:px-4 py-2 rounded transition duration-300"
+            >
+              Benefits
+            </Link>
           </li>
           <li>
-            <Link to="/stats" className="text-black hover:text-white hover:bg-gray-600 px-4 py-2 rounded">Stats</Link>
+            <Link
+              to="/stats"
+              className="text-black text-sm md:text-base hover:text-white hover:bg-gray-600 px-3 md:px-4 py-2 rounded transition duration-300"
+            >
+              Stats
+            </Link>
           </li>
           <li>
-            <Link to="/case-study" className="text-black hover:text-white hover:bg-gray-600 px-4 py-2 rounded">Case Study</Link>
+            <Link
+              to="/case-study"
+              className="text-black text-sm md:text-base hover:text-white hover:bg-gray-600 px-3 md:px-4 py-2 rounded transition duration-300"
+            >
+              Case Study
+            </Link>
           </li>
           <li>
-            <Link to="/big-enough" className="text-black hover:text-white hover:bg-gray-600 px-4 py-2 rounded">Big Enough</Link>
+            <Link
+              to="/big-enough"
+              className="text-black text-sm md:text-base hover:text-white hover:bg-gray-600 px-3 md:px-4 py-2 rounded transition duration-300"
+            >
+              Big Enough
+            </Link>
           </li>
           <li>
-            <Link to="/testimonials" className="text-black hover:text-white hover:bg-gray-600 px-4 py-2 rounded">Testimonials</Link>
+            <Link
+              to="/testimonials"
+              className="text-black text-sm md:text-base hover:text-white hover:bg-gray-600 px-3 md:px-4 py-2 rounded transition duration-300"
+            >
+              Testimonials
+            </Link>
           </li>
           <li>
-            <Link to="/cta" className="text-black hover:text-white hover:bg-gray-600 px-4 py-2 rounded">CTA</Link>
+            <Link
+              to="/cta"
+              className="text-black text-sm md:text-base hover:text-white hover:bg-gray-600 px-3 md:px-4 py-2 rounded transition duration-300"
+            >
+              CTA
+            </Link>
           </li>
           <li>
-            <Link to="/blog" className="text-black hover:text-white hover:bg-gray-600 px-4 py-2 rounded">Blog</Link>
+            <Link
+              to="/blog"
+              className="text-black text-sm md:text-base hover:text-white hover:bg-gray-600 px-3 md:px-4 py-2 rounded transition duration-300"
+            >
+              Blog
+            </Link>
           </li>
         </ul>
       </nav>
+
+      
       <Navbar />
       <Routes>
         <Route path="/" element={<HeroSection />} />
@@ -52,7 +95,10 @@ const App: React.FC = () => {
         <Route path="/testimonials" element={<Testimonial />} />
         <Route path="/cta" element={<CTA />} />
         <Route path="/blog" element={<BlogSection />} />
-        <Route path="*" element={<h1 className="text-center text-2xl mt-20">404 - Page Not Found</h1>} />
+        <Route
+          path="*"
+          element={<h1 className="text-center text-2xl mt-20">404 - Page Not Found</h1>}
+        />
       </Routes>
       <Footer />
     </>
