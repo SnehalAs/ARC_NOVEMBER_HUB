@@ -36,7 +36,7 @@ const Benefits = () => {
           <div className="card-content p-4 bg-black text-white rounded-lg mt-4">
             <h3 className="text-xl mb-2">24 × 7 Round-the-clock Support</h3>
             <p className="text-gray-400 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
+          </div> 
         </div>
 
         
