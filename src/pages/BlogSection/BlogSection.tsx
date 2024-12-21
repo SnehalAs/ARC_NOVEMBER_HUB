@@ -12,13 +12,13 @@ const items = [
   },
   {
     tags: "Business",
-    titles: "The Importance of Brand Awareness in 2024",
+    titles: "What is Ad Exposure and Why It Matters?",
     descriptions: "Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.",
     images: "/assets/business1.svg",
   },
   {
     tags: "Marketing",
-    titles: "Top Digital Strategies for Small Businesses",
+    titles: "What is Ad Exposure and Why It Matters?",
     descriptions: "Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.",
     images: "/assets/support.svg",
   },
@@ -45,9 +45,7 @@ const items = [
 const BlogSection: React.FC = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
-    slidesToScroll: 3, 
-    align: "start", 
-    
+    align: "start",
   });
 
   const scrollPrev = () => emblaApi && emblaApi.scrollPrev();
@@ -66,7 +64,6 @@ const BlogSection: React.FC = () => {
       </div>
 
       <div className="relative max-w-6xl mx-auto mt-10">
-     
         <div className="embla" ref={emblaRef}>
           <div className="embla__container">
             {items.map((item, index) => (
@@ -98,7 +95,6 @@ const BlogSection: React.FC = () => {
           </div>
         </div>
 
-       
         <div className="flex justify-center gap-4 mt-6">
           <button
             onClick={scrollPrev}

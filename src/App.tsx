@@ -14,7 +14,7 @@ const App: React.FC = () => {
   return (
     <>
    
-      <nav className="bg-teal-100 p-4">
+      {/* <nav className="bg-teal-100 p-4">
         <ul className="flex flex-wrap justify-center gap-4 md:gap-6">
           <li>
             <a href="#home" className="text-black text-sm md:text-base hover:text-white hover:bg-gray-600 px-3 md:px-4 py-2 rounded transition duration-300">
@@ -57,7 +57,7 @@ const App: React.FC = () => {
             </a>
           </li>
         </ul>
-      </nav>
+      </nav> */}
       <Navbar />
 
       {/* Sections */}

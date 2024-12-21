@@ -1,4 +1,3 @@
-
 import { IoIosArrowDown } from "react-icons/io";
 import { RxArrowTopRight } from "react-icons/rx";
 import { FaArrowRight } from "react-icons/fa";
@@ -20,31 +19,36 @@ const Navbar = () => {
   return (
     <header className="w-full">
      
-      <div className="flex justify-end items-center gap-4 py-2 px-4 text-md font-bold">
+      <div className="flex justify-end items-center gap-4 py-2 px-4 text-md font-bold mr-16 mt-4 mb-2">
         {topLinks.map(({ text, href }) => (
-          <a
-            key={text}
-            href={href}
-            className="flex items-center gap-1 text-gray-800 hover:text-black"
-          >
-            {text} <RxArrowTopRight />
-          </a>
+          <div key={text} className="flex items-center gap-2">
+            <a
+              href={href}
+              className="flex items-center gap-1 text-gray-800 hover:text-black"
+            >
+              {text} <RxArrowTopRight />
+            </a>
+         
+            {(text === "Jobpreneur" || text === "Skillup") && (
+              <div className="w-[1px] h-5 bg-gray-800"></div>
+            )}
+          </div>
         ))}
       </div>
 
-    
+     
       <div className="border-t border-black"></div>
 
-      
+   
       <div className="flex justify-between items-center py-4 px-4 lg:px-12">
-       
+     
         <img
           src="/assets/hubnexlogo.svg"
           alt="Hubnex Logo"
-          className="h-10 w-auto mx-20"
+          className="h-10 w-auto lg:mx-20"
         />
 
-       
+      
         <div className="hidden lg:flex gap-8">
           {bottomLinks.map(({ text, icon }) => (
             <a
@@ -57,8 +61,8 @@ const Navbar = () => {
           ))}
         </div>
 
-       
-        <div className="flex items-center gap-4">
+     
+        <div className="flex items-center gap-4 lg:mr-24">
           <button className="text-blue-600 font-medium text-sm hover:underline">
             Login
           </button>
