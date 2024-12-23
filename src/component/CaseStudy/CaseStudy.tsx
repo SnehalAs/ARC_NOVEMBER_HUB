@@ -7,25 +7,25 @@ const items = [
     tag: "FINANCE",
     title: "What is Ad Exposure and Why It Matters?",
     description: "Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.",
-    image: "public/assets/business1.svg",
+    image: "assets/business1.svg",
   },
   {
     tag: "BUSINESS",
     title: "What is Ad Exposure and Why It Matters?",
     description: "Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.",
-    image: "public/assets/business1.svg",
+    image: "assets/business1.svg",
   },
   {
     tag: "MARKETING",
     title: "What is Ad Exposure and Why It Matters?",
     description: "Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.",
-    image: "public/assets/business1.svg",
+    image: "assets/business1.svg",
   },
   {
     tag: "FINANCE",
     title: "What is Ad Exposure and Why It Matters?",
     description: "Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.",
-    image: "public/assets/business1.svg",
+    image: "assets/business1.svg",
   },
 ];
 
