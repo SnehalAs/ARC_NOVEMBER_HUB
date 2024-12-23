@@ -37,7 +37,7 @@ const Navbar = () => {
       </div>
 
      
-      <div className="border-t border-black"></div>
+      <div className="border-t border-black w-90"></div>
 
    
       <div className="flex justify-between items-center py-4 px-4 lg:px-12">

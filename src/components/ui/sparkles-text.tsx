@@ -2,8 +2,6 @@
 
 import { CSSProperties, ReactElement, useEffect, useState } from "react";
 import { motion } from "framer-motion";
-
-// import { cn } from "@/lib/utils";
 import { cn } from "../../lib/utils";
 
 interface Sparkle {
@@ -63,9 +61,9 @@ interface SparklesTextProps {
 
 const SparklesText: React.FC<SparklesTextProps> = ({
   text,
-  colors = { first: "#9E7AFF", second: "#FE8BBB" },
+  colors = { first: "#FF00FF", second: "#00FFFF" },
   className,
-  sparklesCount = 10,
+  sparklesCount = 30,
   ...props
 }) => {
   const [sparkles, setSparkles] = useState<Sparkle[]>([]);
@@ -105,7 +103,7 @@ const SparklesText: React.FC<SparklesTextProps> = ({
     return () => clearInterval(interval);
   },
   [sparklesCount, colors.first,colors.second]
-  //  [colors.first, colors.second]
+ 
 );
 
   return (
