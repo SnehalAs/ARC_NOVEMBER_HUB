@@ -1,93 +1,111 @@
-import React from "react";
+import React, { useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { RxArrowTopRight } from "react-icons/rx";
-import "./BlogSection.css";
 
-const items = [
+const blogs = [
   {
-    tags: "Finance",
-    titles: "What is Ad Exposure and Why It Matters?",
-    descriptions: "Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.",
-    images: "/assets/support.svg",
+    tag: "Finance",
+    title: "What is Ad Exposure and Why It Matters?",
+    description:
+      "Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.",
+    image: "/assets/support.svg",
   },
   {
-    tags: "Business",
-    titles: "What is Ad Exposure and Why It Matters?",
-    descriptions: "Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.",
-    images: "/assets/business1.svg",
+    tag: "Business",
+    title: "What is Ad Exposure and Why It Matters?",
+    description:
+      "Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.",
+    image: "/assets/business1.svg",
   },
   {
-    tags: "Marketing",
-    titles: "What is Ad Exposure and Why It Matters?",
-    descriptions: "Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.",
-    images: "/assets/support.svg",
+    tag: "Marketing",
+    title: "What is Ad Exposure and Why It Matters?",
+    description:
+      "Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.",
+    image: "/assets/support.svg",
   },
   {
-    tags: "Finance",
-    titles: "What is Ad Exposure and Why It Matters?",
-    descriptions: "Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.",
-    images: "/assets/support.svg",
+    tag: "Finance",
+    title: "What is Ad Exposure and Why It Matters?",
+    description:
+      "Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.",
+    image: "/assets/support.svg",
   },
   {
-    tags: "Business",
-    titles: "The Importance of Brand Awareness in 2024",
-    descriptions: "Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.",
-    images: "/assets/business1.svg",
+    tag: "Business",
+    title: "What is Ad Exposure and Why It Matters?",
+    description:
+      "Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.",
+    image: "/assets/business1.svg",
   },
   {
-    tags: "Marketing",
-    titles: "Top Digital Strategies for Small Businesses",
-    descriptions: "Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.",
-    images: "/assets/support.svg",
+    tag: "Marketing",
+    title: "What is Ad Exposure and Why It Matters?",
+    description:
+      "Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.",
+    image: "/assets/support.svg",
   },
 ];
 
 const BlogSection: React.FC = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
-    loop: true,
     align: "start",
+    slidesToScroll: 1,
+    containScroll: "keepSnaps",
+    dragFree: true,
   });
 
-  const scrollPrev = () => emblaApi && emblaApi.scrollPrev();
-  const scrollNext = () => emblaApi && emblaApi.scrollNext();
+  const scrollPrev = useCallback(() => {
+    if (emblaApi) emblaApi.scrollPrev();
+  }, [emblaApi]);
+
+  const scrollNext = useCallback(() => {
+    if (emblaApi) emblaApi.scrollNext();
+  }, [emblaApi]);
 
   return (
-    <section className="bg-gradient-to-b from-blue-800 to-black py-16">
-      <div className="text-center text-white">
-        <h1 className="text-4xl font-bold">Blogs</h1>
-        <p className="text-lg max-w-xl mx-auto mt-4">
-          Explore the impact we've delivered
-        </p>
-        <button className="mt-6 px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg">
-          View All →
-        </button>
-      </div>
+    <section className="bg-gradient-to-b from-blue-700 to-blue-900 text-center py-12">
+      {/* Header */}
+      <h2 className="text-white text-4xl font-bold">Blogs</h2>
+      <p className="text-gray-300 mt-2">Explore the impact we've delivered</p>
+      <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
+        View All →
+      </button>
 
-      <div className="relative max-w-6xl mx-auto mt-10">
-        <div className="embla" ref={emblaRef}>
-          <div className="embla__container">
-            {items.map((item, index) => (
-              <div className="embla__slide" key={index}>
-                <div className="bg-white rounded-lg shadow-lg">
+      {/* Embla Carousel */}
+      <div className="relative mt-10 max-w-6xl mx-auto px-4">
+        <div className="overflow-hidden" ref={emblaRef}>
+          <div className="flex gap-4">
+            {blogs.map((blog, index) => (
+              <div
+                key={index}
+                className="flex-none w-[45%] sm:w-[48%] lg:w-[32%] p-2"
+              >
+                <div className="bg-white rounded-lg shadow-md p-5">
                   <img
-                    src={item.images}
-                    alt="Blog Image"
-                    className="w-full h-[200px] object-cover rounded-t-lg"
+                    src={blog.image}
+                    alt={blog.title}
+                    className="rounded-lg mb-4"
                   />
-                  <div className="p-4">
-                    <span className="inline-block px-3 py-1 text-lg font-semibold text-black bg-white border-2 border-red-300 rounded-lg">
-                      {item.tags}
-                    </span>
-                    <h3 className="text-xl font-bold mt-2">{item.titles}</h3>
-                    <p className="text-gray-950 text-md mt-1">
-                      {item.descriptions}
+                  <div>
+                    <div className="flex justify-start gap-2 items-center">
+                      <span className="text-sm font-semibold text-black border border-red-400 bg-white px-2 py-1 rounded-md">
+                        {blog.tag}
+                      </span>
+                    </div>
+                    <h3 className="text-xl mt-2 text-left">{blog.title}</h3>
+                    <p className="text-gray-600 mt-2 text-left">
+                      {blog.description}
                     </p>
-                    <a
-                      href="#"
-                      className="flex items-center gap-1 text-black font-medium mt-3 hover:underline"
-                    >
-                      Read More <RxArrowTopRight />
-                    </a>
+                    <div className="flex justify-start mt-3">
+                      <a
+                        href="#"
+                        className="text-black font-medium inline-block hover:underline"
+                      >
+                        Read more{" "}
+                        <RxArrowTopRight className="inline-block ml-2" />
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -98,13 +116,13 @@ const BlogSection: React.FC = () => {
         <div className="flex justify-center gap-4 mt-6">
           <button
             onClick={scrollPrev}
-            className="px-4 py-2 bg-gray-700 text-white rounded-md hover:bg-gray-600"
+            className="px-4 py-2 bg-white text-gray-700 rounded-full hover:bg-gray-400"
           >
             ←
           </button>
           <button
             onClick={scrollNext}
-            className="px-4 py-2 bg-gray-700 text-white rounded-md hover:bg-gray-600"
+            className="px-4 py-2 bg-gray-700 text-white rounded-full hover:bg-gray-600"
           >
             →
           </button>

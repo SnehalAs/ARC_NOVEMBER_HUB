@@ -1,10 +1,9 @@
 import React, { useRef } from "react";
-import './Testimonial.css'
+
 const Testimonial: React.FC = () => {
   const sliderRef = useRef<HTMLDivElement>(null);
   let isDragging = false;
   let startX: number, scrollLeft: number;
-
 
   const handleMouseDown = (e: React.MouseEvent) => {
     if (e.button !== 0) return;
@@ -29,7 +28,6 @@ const Testimonial: React.FC = () => {
     sliderRef.current.scrollLeft = scrollLeft - walk;
   };
 
-  
   let touchStartX: number, touchScrollLeft: number;
 
   const handleTouchStart = (e: React.TouchEvent) => {
@@ -61,8 +59,12 @@ const Testimonial: React.FC = () => {
         onMouseMove={handleMouseMove}
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
+        style={{
+          scrollbarWidth: "none",
+          msOverflowStyle: "none",
+        }}
       >
-        
+        {/* Slack Testimonial */}
         <div className="flex-shrink-0 w-full flex items-center px-8 py-4">
           <div className="flex flex-col lg:flex-row items-center">
             <div className="flex-shrink-0 flex justify-center items-center mb-4 lg:mb-0">
@@ -74,13 +76,12 @@ const Testimonial: React.FC = () => {
             </div>
             <div className="flex-1 text-left p-4">
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-              Driving results for leaders across the globe
+                Driving results for leaders across the globe
               </h2>
               <p className="text-gray-600 mb-4">
-              "With Landingfolio, the design team can now build design which identifies employees' 
-              career aspirations and goals and from which we approach managers and check to she
-               what is happening."
-
+                "With Landingfolio, the design team can now build design which
+                identifies employees' career aspirations and goals and from
+                which we approach managers and check to see what is happening."
               </p>
               <h1 className="text-lg font-bold mt-4">Slack</h1>
               <p className="text-gray-500">Product Company</p>
@@ -88,7 +89,7 @@ const Testimonial: React.FC = () => {
           </div>
         </div>
 
-      
+        {/* Facebook Testimonial */}
         <div className="flex-shrink-0 w-full flex items-center px-8 py-4">
           <div className="flex flex-col lg:flex-row items-center">
             <div className="flex-shrink-0 flex justify-center items-center mb-4 lg:mb-0">
@@ -100,12 +101,12 @@ const Testimonial: React.FC = () => {
             </div>
             <div className="flex-1 text-left p-4">
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-              Driving results for leaders across the globe
+                Driving results for leaders across the globe
               </h2>
               <p className="text-gray-600 mb-4">
-              "With Landingfolio, the design team can now build design which identifies employees' 
-              career aspirations and goals and from which we approach managers and check to she
-               what is happening."
+                "With Landingfolio, the design team can now build design which
+                identifies employees' career aspirations and goals and from
+                which we approach managers and check to see what is happening."
               </p>
               <h1 className="text-lg font-bold mt-4">Facebook</h1>
               <p className="text-gray-500">Tech Company</p>
@@ -113,7 +114,7 @@ const Testimonial: React.FC = () => {
           </div>
         </div>
 
-        
+        {/* Google Testimonial */}
         <div className="flex-shrink-0 w-full flex items-center px-8 py-4">
           <div className="flex flex-col lg:flex-row items-center">
             <div className="flex-shrink-0 flex justify-center items-center mb-4 lg:mb-0">
@@ -125,12 +126,12 @@ const Testimonial: React.FC = () => {
             </div>
             <div className="flex-1 text-left p-4">
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-              Driving results for leaders across the globe
+                Driving results for leaders across the globe
               </h2>
               <p className="text-gray-600 mb-4">
-              "With Landingfolio, the design team can now build design which identifies employees' 
-              career aspirations and goals and from which we approach managers and check to she
-               what is happening."
+                "With Landingfolio, the design team can now build design which
+                identifies employees' career aspirations and goals and from
+                which we approach managers and check to see what is happening."
               </p>
               <h1 className="text-lg font-bold mt-4">Google</h1>
               <p className="text-gray-500">Search Engine Giant</p>
