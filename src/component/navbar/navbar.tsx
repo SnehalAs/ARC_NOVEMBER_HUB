@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <header className="w-full">
      
-      <div className="flex justify-end items-center gap-4 py-2 px-4 text-md font-bold mr-16 mt-4 mb-2">
+      <div className="flex justify-end items-center gap-4 py-2 px-4 text-md font-bold mr-16 mt-4 mb-2 min-w-[100vw]">
         {topLinks.map(({ text, href }) => (
           <div key={text} className="flex items-center gap-2">
             <a
