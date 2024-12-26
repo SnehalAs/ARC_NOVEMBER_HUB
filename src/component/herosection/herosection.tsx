@@ -24,7 +24,7 @@ const HeroSection = () => {
           <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 text-center lg:text-left">
             <SparklesText
               text="SaaS Growth With Weekly Tips."
-              className="text-2xl sm:text-4xl md:text-4xl lg:text-6xl text-left"
+              className="text-2xl sm:text-2xl md:text-4xl lg:text-6xl text-left sm:whitespace-normal whitespace-nowrap overflow-hidden"
             />
           </h1>
           <p className="text-gray-600 mb-6 text-sm sm:text-base lg:text-lg text-left lg:text-left">
