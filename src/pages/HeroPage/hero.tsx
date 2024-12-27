@@ -9,6 +9,7 @@ import BigEnough from '../../component/BigEnough/BigEnough';
 import Testimonial from '../../component/Testimonial/Testimonial';
 import CTA from '../../component/CTA/CTA';
 import BlogSection from '../../component/BlogSection/BlogSection';
+import Accomplish from '../../component/Footer/Accomplish';
 
 const Hero: React.FC = () => {
   return (
@@ -37,6 +38,9 @@ const Hero: React.FC = () => {
       </div>
       <div id="blog" className="py-10">
         <BlogSection />
+      </div>
+      <div id="accomplish" className="py-10">
+        <Accomplish />
       </div>
 
       <Footer />

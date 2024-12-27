@@ -65,14 +65,14 @@ const BlogSection: React.FC = () => {
 
   return (
     <section className="bg-gradient-to-b from-blue-700 to-blue-900 text-center py-12">
-      {/* Header */}
+      
       <h2 className="text-white text-4xl font-bold">Blogs</h2>
       <p className="text-gray-300 mt-2">Explore the impact we've delivered</p>
       <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
         View All →
       </button>
 
-      {/* Embla Carousel */}
+     
       <div className="relative mt-10 max-w-6xl mx-auto px-4">
         <div className="overflow-hidden" ref={emblaRef}>
           <div className="flex gap-4">
@@ -103,7 +103,7 @@ const BlogSection: React.FC = () => {
                         className="text-black font-medium inline-block hover:underline"
                       >
                         Read more{" "}
-                        <RxArrowTopRight className="inline-block ml-2" />
+                        <RxArrowTopRight className="inline-block lg:ml-2" />
                       </a>
                     </div>
                   </div>
